@@ -9,6 +9,7 @@ function App() {
         <p>
           Editado por Apaez, oli :)
           Proyecto elaborado por 6 locos
+          Hola
         </p>
       </header>
     </div>
