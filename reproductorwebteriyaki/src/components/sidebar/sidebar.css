@@ -1,0 +1,8 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background-color: #181818;
+  align-items: center;
+}
