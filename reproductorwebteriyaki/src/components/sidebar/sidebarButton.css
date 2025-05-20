@@ -5,11 +5,26 @@ a {
     height: 80px;
     width: 80px;
     color: white;
+    background-color: #181818;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px auto;
+    margin: 10px auto;
+}
+
+.sidebar-button:hover {
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+}
+
+.sidebar-button.active {
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
 }
 
 .sidebar-text {
