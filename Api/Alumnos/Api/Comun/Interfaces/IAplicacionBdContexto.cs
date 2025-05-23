@@ -7,6 +7,7 @@ public interface IAplicacionBdContexto
 {
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<SesionUsuario> SesionesUsuario { get; set; }
+    public DbSet<Album> Albums { get; set; }
 
     Task<int> SaveChangesAsync(CancellationToken cancelacionToken);
     int SaveChanges();

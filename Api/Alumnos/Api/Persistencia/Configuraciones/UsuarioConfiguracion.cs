@@ -8,6 +8,8 @@ public class UsuarioConfiguracion
     public void Configure(EntityTypeBuilder<Usuario> constructor)
     {
         constructor.HasKey(u => u.Id);
+        constructor.HasMany(u => u.Sesiones)
+            .WithOne(s => s.UsuarioId);
     }
 
 }

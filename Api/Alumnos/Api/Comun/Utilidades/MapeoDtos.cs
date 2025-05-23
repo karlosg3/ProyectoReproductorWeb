@@ -1,3 +1,4 @@
+using Api.Comun.Modelos.Album;
 using Api.Comun.Modelos.Usuarios;
 using Api.Entidades;
 
@@ -15,6 +16,14 @@ public static class MapeoDtos
             ApellidoMaterno = usuario.ApellidoMaterno,
             NombreUsuario = usuario.NombreUsuario,
             Habilitado = usuario.Habilitado,
+        };
+    }
+
+    public static BuscarAlbumsDto ConvertirDto(this Album album) {
+        return new BuscarAlbumsDto()
+        {
+            Slug = album.Slug,
+            Nombre = album.Nombre,
         };
     }
 }
