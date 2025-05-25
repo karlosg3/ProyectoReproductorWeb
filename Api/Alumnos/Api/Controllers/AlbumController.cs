@@ -57,6 +57,7 @@ public class AlbumController : ControllerBase
             FechaSalida = album.FechaSalida,
             Genero = album.Genero,
             Portada = album.Portada,
+            Descripcion = album.Descripcion
         };
         await _contexto.Albums.AddAsync(nuevoAlbum, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
@@ -65,28 +66,36 @@ public class AlbumController : ControllerBase
     }
 
     [HttpPut("{slug}")]
-    public async Task<BuscarAlbumsDto> ModificarAlbum([FromBody] ModificarUsuarioDto usuarioDto,
+    public async Task<BuscarAlbumsDto> ModificarAlbum([FromBody] ModificarAlbumDto albumDto,
         CancellationToken cancelacionToken)
     {
-        var usuario = await _contexto.Usuarios
-            .FirstOrDefaultAsync(x => x.Slug == usuarioDto.Slug, cancelacionToken);
+        var album = await _contexto.Albums
+            .FirstOrDefaultAsync(x => x.Slug == albumDto.Slug, cancelacionToken);
 
-        if (usuario == null)
-            return new BuscarUsuariosDto();
+        if (album == null)
+            return new BuscarAlbumsDto();
 
-        usuario.Nombre = usuarioDto.Nombre;
-        usuario.ApellidoPaterno = usuarioDto.ApellidoPaterno;
-        usuario.ApellidoMaterno = usuarioDto.ApellidoMaterno;
-        usuario.NombreUsuario = usuarioDto.NombreUsuario;
-
-        if (string.IsNullOrEmpty(usuario.Contraseña) == false)
-        {
-            usuario.Contraseña = _hasherServicio.GenerarHash(usuarioDto.Contraseña);
-        }
+        album.Descripcion = albumDto.Descripcion;
 
         await _contexto.SaveChangesAsync(cancelacionToken);
 
-        return usuario.ConvertirDto();
+        return album.ConvertirDto();
+    }
+
+    [HttpPatch("{slug}")]
+    public async Task<bool> CambiarHabilitado([FromBody] HabilitadoAlbumsDto album,
+        CancellationToken cancelacionToken)
+    {
+        var entidad = await _contexto.Albums.FirstOrDefaultAsync(x => x.Slug == album.Slug, cancelacionToken);
+
+        if (entidad == null)
+            return false;
+
+        entidad.Habilitado = album.Habilitado;
+
+        await _contexto.SaveChangesAsync(cancelacionToken);
+
+        return true;
     }
 }
 

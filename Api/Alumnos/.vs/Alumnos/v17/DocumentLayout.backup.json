@@ -1,42 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\",
+  "WorkspaceRootPath": "C:\\Users\\GIGABYTE\\Desktop\\Escritorio\\ITH\\Sexto Semestre\\Programacion Web\\ProyectoReproductorWeb\\Api\\Alumnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\album\\modificaralbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\album\\modificaralbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\album\\crearalbumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\album\\crearalbumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\albumconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\gigabyte\\desktop\\escritorio\\ith\\sexto semestre\\programacion web\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\albumconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\albumconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\album\\buscaralbumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\album\\buscaralbumsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\gigabyte\\desktop\\escritorio\\ith\\sexto semestre\\programacion web\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\albumartista\\albumartista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\albumartista\\albumartista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\usuarioconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\usuarioconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\andre\\onedrive\\documents\\github\\proyectoreproductorweb\\api\\alumnos\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\gigabyte\\desktop\\escritorio\\ith\\sexto semestre\\programacion web\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\albumgenero\\albumgenero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\albumgenero\\albumgenero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ModificarAlbum.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Album\\ModificarAlbum.cs",
-              "RelativeDocumentMoniker": "Api\\Comun\\Modelos\\Album\\ModificarAlbum.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Album\\ModificarAlbum.cs",
-              "RelativeToolTip": "Api\\Comun\\Modelos\\Album\\ModificarAlbum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AlbumGenero.cs",
+              "DocumentMoniker": "C:\\Users\\GIGABYTE\\Desktop\\Escritorio\\ITH\\Sexto Semestre\\Programacion Web\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\AlbumGenero\\AlbumGenero.cs",
+              "RelativeDocumentMoniker": "Api\\Comun\\Modelos\\AlbumGenero\\AlbumGenero.cs",
+              "ToolTip": "C:\\Users\\GIGABYTE\\Desktop\\Escritorio\\ITH\\Sexto Semestre\\Programacion Web\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\AlbumGenero\\AlbumGenero.cs",
+              "RelativeToolTip": "Api\\Comun\\Modelos\\AlbumGenero\\AlbumGenero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T15:52:42.709Z",
+              "WhenOpened": "2025-05-24T23:09:40.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AlbumController.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\AlbumController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\AlbumController.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\AlbumController.cs",
-              "RelativeToolTip": "Api\\Controllers\\AlbumController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAkwEMAAAAHAAAAAAAAAA==",
+              "Title": "AlbumArtista.cs",
+              "DocumentMoniker": "C:\\Users\\GIGABYTE\\Desktop\\Escritorio\\ITH\\Sexto Semestre\\Programacion Web\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\AlbumArtista\\AlbumArtista.cs",
+              "RelativeDocumentMoniker": "Api\\Comun\\Modelos\\AlbumArtista\\AlbumArtista.cs",
+              "ToolTip": "C:\\Users\\GIGABYTE\\Desktop\\Escritorio\\ITH\\Sexto Semestre\\Programacion Web\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\AlbumArtista\\AlbumArtista.cs",
+              "RelativeToolTip": "Api\\Comun\\Modelos\\AlbumArtista\\AlbumArtista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T14:36:15.742Z",
+              "WhenOpened": "2025-05-24T23:09:08.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BuscarAlbumsDto.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Album\\BuscarAlbumsDto.cs",
-              "RelativeDocumentMoniker": "Api\\Comun\\Modelos\\Album\\BuscarAlbumsDto.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Album\\BuscarAlbumsDto.cs",
-              "RelativeToolTip": "Api\\Comun\\Modelos\\Album\\BuscarAlbumsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T15:28:50.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AlbumConfiguracion.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "DocumentMoniker": "C:\\Users\\GIGABYTE\\Desktop\\Escritorio\\ITH\\Sexto Semestre\\Programacion Web\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
               "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "ToolTip": "C:\\Users\\GIGABYTE\\Desktop\\Escritorio\\ITH\\Sexto Semestre\\Programacion Web\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
               "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T14:43:58.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrearAlbumsDto.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Album\\CrearAlbumsDto.cs",
-              "RelativeDocumentMoniker": "Api\\Comun\\Modelos\\Album\\CrearAlbumsDto.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Album\\CrearAlbumsDto.cs",
-              "RelativeToolTip": "Api\\Comun\\Modelos\\Album\\CrearAlbumsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T15:30:00.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Album.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Album.cs",
-              "RelativeDocumentMoniker": "Api\\Entidades\\Album.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Album.cs",
-              "RelativeToolTip": "Api\\Entidades\\Album.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T14:36:37.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Api\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAgwF0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T14:39:26.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UsuarioConfiguracion.cs",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\UsuarioConfiguracion.cs",
-              "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\UsuarioConfiguracion.cs",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\UsuarioConfiguracion.cs",
-              "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\UsuarioConfiguracion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T14:46:08.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Api\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\appsettings.Development.json",
-              "RelativeToolTip": "Api\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-23T14:32:56.401Z",
               "EditorCaption": ""
             }
           ]

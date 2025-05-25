@@ -1,4 +1,5 @@
 ﻿using Api.Entidades;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Persistencia.Configuraciones
@@ -7,11 +8,17 @@ namespace Api.Persistencia.Configuraciones
     {
         public void Configure(EntityTypeBuilder<Album> constructor)
         {
-            constructor.HasKey(u => u.Id);
-            constructor.HasMany(x => x.Artista)
-                .WithMany(p => p.);
-            constructor.HasMany(g => g.Genero)
-                .WithMany(h => h.);
+            constructor.HasKey(a => a.Id);
+
+            constructor
+                .HasMany(a => a.Artistas)
+                .WithMany(ar => ar.Albums)
+                .UsingEntity(j => j.ToTable("AlbumArtistas"));
+
+            constructor
+                .HasMany(a => a.Generos)
+                .WithMany(g => g.Generos)
+                .UsingEntity(j => j.ToTable("AlbumGeneros"));
         }
     }
 }

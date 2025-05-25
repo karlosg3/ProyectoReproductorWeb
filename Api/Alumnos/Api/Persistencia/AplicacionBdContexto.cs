@@ -1,9 +1,13 @@
+using Api.Comun.Interfaces;
+using Api.Comun.Modelos.AlbumArtista;
+using Api.Comun.Modelos.AlbumGenero;
+using Api.Entidades;
+using Api.Persistencia.Configuraciones;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
 using System.Reflection;
-using Api.Comun.Interfaces;
-using Api.Entidades;
+using System.Reflection.Emit;
 
 namespace Api.Persistencia;
 
@@ -16,6 +20,10 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<SesionUsuario> SesionesUsuario { get; set; }
     public DbSet<Album> Albums { get; set; }
+    public DbSet<Artista> Artistas { get; set; }
+    public DbSet<Genero> Generos { get; set; }
+    public DbSet<AlbumArtista> AlbumArtistas { get; set; }
+    public DbSet<AlbumGenero> AlbumGeneros { get; set; }
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancelacionToken = default)
     {
