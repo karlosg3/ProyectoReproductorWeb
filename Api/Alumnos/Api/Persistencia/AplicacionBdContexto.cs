@@ -19,12 +19,17 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     }
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<SesionUsuario> SesionesUsuario { get; set; }
+<<<<<<< Updated upstream
     public DbSet<Album> Albums { get; set; }
     public DbSet<Artista> Artistas { get; set; }
     public DbSet<Genero> Generos { get; set; }
     public DbSet<AlbumArtista> AlbumArtistas { get; set; }
     public DbSet<AlbumGenero> AlbumGeneros { get; set; }
 
+=======
+    public DbSet<Album> Albums { get; set; }/*Apaez*/
+    public DbSet<GeneroMusical> GenerosMusicales { get; set; }/*Andres*/
+>>>>>>> Stashed changes
     public override async Task<int> SaveChangesAsync(CancellationToken cancelacionToken = default)
     {
         foreach (var entrada in ChangeTracker.Entries<ISlug>())
