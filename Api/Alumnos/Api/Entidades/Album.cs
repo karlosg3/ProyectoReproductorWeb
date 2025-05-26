@@ -6,7 +6,7 @@
 
         public string Nombre { get; set; }
 
-        public DateTime FechaSalida { get; set; }
+        public DateTime FechaSalida { get; set; };
 
         public int Artista { get; set; }
 
