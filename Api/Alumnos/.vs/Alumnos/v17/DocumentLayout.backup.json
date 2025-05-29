@@ -1,135 +1,182 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\",
+  "Documents": [],
+=======
+  "WorkspaceRootPath": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\artistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\artistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\cancioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\cancioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\albumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\aplicacionbdcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\cancionescondifugracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\cancionescondifugracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\aplicacionbdcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\aplicacionbdcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\generomusicalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\generomusicalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\albumartistaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\albumartistaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\iniciosesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\iniciosesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\cancionplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\cancionplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< Updated upstream
+      "DocumentGroups": []
+=======
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AplicacionBdContexto.cs",
-              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\AplicacionBdContexto.cs",
-              "RelativeDocumentMoniker": "Api\\Persistencia\\AplicacionBdContexto.cs",
-              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\AplicacionBdContexto.cs",
-              "RelativeToolTip": "Api\\Persistencia\\AplicacionBdContexto.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T03:36:53.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ArtistaController.cs",
-              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\ArtistaController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\ArtistaController.cs",
-              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\ArtistaController.cs",
-              "RelativeToolTip": "Api\\Controllers\\ArtistaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:16:09.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Api\\Controllers\\UsuariosController.cs",
+              "Title": "CancionController.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\CancionController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\CancionController.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\CancionController.cs",
+              "RelativeToolTip": "Api\\Controllers\\CancionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:13:22.268Z"
+              "WhenOpened": "2025-05-26T16:36:01.54Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AlbumController.cs",
-              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\AlbumController.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\AlbumController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\AlbumController.cs",
-              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\AlbumController.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\AlbumController.cs",
               "RelativeToolTip": "Api\\Controllers\\AlbumController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:12:58.254Z",
+              "WhenOpened": "2025-05-26T16:35:14.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CancionesCondifugracion.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\CancionesCondifugracion.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\CancionesCondifugracion.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\CancionesCondifugracion.cs",
+              "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\CancionesCondifugracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:35:06.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AplicacionBdContexto.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\AplicacionBdContexto.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\AplicacionBdContexto.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\AplicacionBdContexto.cs",
+              "RelativeToolTip": "Api\\Persistencia\\AplicacionBdContexto.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:33:22.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlbumArtistaConfiguracion.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:32:21.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "InicioSesionController.cs",
-              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\InicioSesionController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\InicioSesionController.cs",
-              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\InicioSesionController.cs",
-              "RelativeToolTip": "Api\\Controllers\\InicioSesionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Playlist.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Playlist.cs",
+              "RelativeDocumentMoniker": "Api\\Entidades\\Playlist.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Playlist.cs",
+              "RelativeToolTip": "Api\\Entidades\\Playlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:12:37.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GeneroMusicalController.cs",
-              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\GeneroMusicalController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\GeneroMusicalController.cs",
-              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\GeneroMusicalController.cs",
-              "RelativeToolTip": "Api\\Controllers\\GeneroMusicalController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T19:12:29.991Z"
+              "WhenOpened": "2025-05-26T16:25:33.834Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Artista.cs",
-              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Artista.cs",
-              "RelativeDocumentMoniker": "Api\\Entidades\\Artista.cs",
-              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Artista.cs",
-              "RelativeToolTip": "Api\\Entidades\\Artista.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Title": "Cancion.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Cancion.cs",
+              "RelativeDocumentMoniker": "Api\\Entidades\\Cancion.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Cancion.cs",
+              "RelativeToolTip": "Api\\Entidades\\Cancion.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T18:50:41.037Z"
+              "WhenOpened": "2025-05-26T16:16:11.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "Api\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "Api\\Entidades\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:16:28.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CancionPlaylist.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\CancionPlaylist.cs",
+              "RelativeDocumentMoniker": "Api\\Entidades\\CancionPlaylist.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\CancionPlaylist.cs",
+              "RelativeToolTip": "Api\\Entidades\\CancionPlaylist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:15:18.462Z",
+              "EditorCaption": ""
             }
           ]
         }
       ]
+>>>>>>> Stashed changes
     }
   ]
 }

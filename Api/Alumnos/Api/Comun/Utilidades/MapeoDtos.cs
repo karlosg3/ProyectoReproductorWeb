@@ -1,4 +1,5 @@
 using Api.Comun.Modelos.Album;
+using Api.Comun.Modelos.Cancion;
 using Api.Comun.Modelos.Usuarios;
 using Api.Entidades;
 
@@ -25,5 +26,18 @@ public static class MapeoDtos
             Slug = album.Slug,
             Nombre = album.Nombre,
         };
+
+
+    }
+
+    public static BuscarCancionDto ConvertirDto(this Cancion cancion)
+    {
+        return new BuscarCancionDto()
+        {
+            Slug = cancion.Slug,
+            Titulo = cancion.Titulo,
+        };
+
+
     }
 }

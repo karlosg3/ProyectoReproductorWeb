@@ -1,12 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\cancion\\crearcanciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\cancion\\crearcanciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\usuarios\\crearusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\usuarios\\crearusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "ad7b79f8-3a29-4d1e-b647-98dfab02877d",
+        "Display": 0,
+        "X": 784,
+        "Y": 208,
+        "Width": 1142,
+        "Height": 711,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CrearUsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Usuarios\\CrearUsuarioDto.cs",
+              "RelativeDocumentMoniker": "Api\\Comun\\Modelos\\Usuarios\\CrearUsuarioDto.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Usuarios\\CrearUsuarioDto.cs",
+              "RelativeToolTip": "Api\\Comun\\Modelos\\Usuarios\\CrearUsuarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:13:28.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrearCancionDto.cs",
+              "DocumentMoniker": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Cancion\\CrearCancionDto.cs",
+              "RelativeDocumentMoniker": "Api\\Comun\\Modelos\\Cancion\\CrearCancionDto.cs",
+              "ToolTip": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Comun\\Modelos\\Cancion\\CrearCancionDto.cs",
+              "RelativeToolTip": "Api\\Comun\\Modelos\\Cancion\\CrearCancionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:10:53.719Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
