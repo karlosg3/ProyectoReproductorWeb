@@ -26,6 +26,8 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     public DbSet<AlbumArtista> AlbumArtistas { get; set; }
     public DbSet<AlbumGenero> AlbumGeneros { get; set; }
 
+    public DbSet<Cancion> Canciones { get; set; }
+
 =======
     public DbSet<Album> Albums { get; set; }/*Apaez*/
     public DbSet<GeneroMusical> GenerosMusicales { get; set; }/*Andres*/

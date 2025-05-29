@@ -52,3 +52,12 @@ pids/
 
 # Optional: Ignora archivos generados por herramientas
 .eslintcache
+Api/Alumnos/.vs/Alumnos/v17/DocumentLayout.backup.json
+Api/Alumnos/.vs/Alumnos/v17/DocumentLayout.backup.json
+Api/Alumnos/.vs/Alumnos/v17/DocumentLayout.json
+Api/Alumnos/Api/obj/Api.csproj.nuget.dgspec.json
+Api/Alumnos/Api/obj/Api.csproj.nuget.g.props
+Api/Alumnos/Api/obj/Api.csproj.nuget.g.props
+Api/Alumnos/Api/obj/Debug/net8.0/Api.GeneratedMSBuildEditorConfig.editorconfig
+Api/Alumnos/Api/obj/project.assets.json
+Api/Alumnos/Api/obj/project.nuget.cache
