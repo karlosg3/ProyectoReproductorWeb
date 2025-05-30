@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programación Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj": {}
+    "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programación Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj": {
+    "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programación Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programación Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\ELIAZAR ROJO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programación Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\obj\\",
+        "projectPath": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ELIAZAR ROJO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -95,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
