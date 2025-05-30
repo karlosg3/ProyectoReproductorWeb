@@ -2,6 +2,7 @@ using Api.Comun.Modelos.Album;
 using Api.Comun.Modelos.Cancion;
 using Api.Comun.Modelos.Usuarios;
 using Api.Comun.Modelos.Artista;
+using Api.Comun.Modelos.Playlist;
 using Api.Entidades;
 
 namespace Api.Comun.Utilidades;
@@ -44,6 +45,17 @@ public static class MapeoDtos
         {
             Slug = artista.Slug,
             Nombre = artista.Nombre
+        };
+
+
+    }
+    
+    public static BuscarPlaylistDto ConvertirDto(this Playlist playlist)
+    {
+        return new BuscarPlaylistDto()
+        {
+            Slug = playlist.Slug,
+            Nombre = playlist.Nombre
         };
 
 

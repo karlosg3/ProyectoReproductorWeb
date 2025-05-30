@@ -1,5 +1,6 @@
 ﻿using Api.Comun.Interfaces;
 using Api.Comun.Modelos.Cancion;
+using Api.Comun.Utilidades;
 using Api.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -25,49 +26,36 @@ public class CancionController : ControllerBase
         {
             Titulo = dto.Titulo,
             ArchivoAudio = dto.ArchivoDeAudio,
-            NumeroPista = dto.NumeroDePista,
+            NumeroPista = dto.NumeroPista,
             Reproducciones = 0,
             FechaLanzamiento = dto.FechaDeLanzamiento,
             Slug = dto.Titulo.ToLower().Replace(" ", "-"),
             Habilitado = true,
-            AlbumId = dto.AlbumId,
-            IdArtista = dto.IdArtista
+            AlbumId = dto.IdAlbum
         };
 
         await _contexto.Canciones.AddAsync(cancion, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
+        
+        foreach (var idArtista in dto.IdsArtistas)
+        {
+            var colaboracion = new Colaboracion
+            {
+                CancionId = cancion.Id,
+                ArtistaId = idArtista
+            };
+
+            await _contexto.Colaboraciones.AddAsync(colaboracion, cancelacionToken);
+        }
 
         return Ok(cancion.Id);
     }
 
-    // Modificar canción
-    [HttpPut("{id}")]
-    public async Task<IActionResult> Modificar([FromBody] ModificarCancionDto dto, CancellationToken cancelacionToken)
-    {
-        var cancion = await _contexto.Canciones.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
-
-        if (cancion == null)
-            return NotFound();
-
-        cancion.Titulo = dto.Titulo;
-        cancion.Duracion = dto.Duracion;
-        cancion.ArchivoDeAudio = dto.ArchivoDeAudio;
-        cancion.NumeroDePista = dto.NumeroDePista;
-        cancion.FechaDeLanzamiento = dto.FechaDeLanzamiento;
-        cancion.Slug = dto.Titulo.ToLower().Replace(" ", "-");
-        cancion.AlbumId = dto.AlbumId;
-        cancion.ArtistaId = dto.ArtistaId;
-
-        await _contexto.SaveChangesAsync(cancelacionToken);
-
-        return Ok(dto);
-    }
-
     // Habilitar/deshabilitar canción
-    [HttpPatch("{id}/habilitar")]
+    [HttpPatch("{Slug}/habilitar")]
     public async Task<IActionResult> Habilitar([FromBody] HabilitadoCancionDto dto, CancellationToken cancelacionToken)
     {
-        var cancion = await _contexto.Canciones.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
+        var cancion = await _contexto.Canciones.FirstOrDefaultAsync(x => x.Titulo == dto.Slug, cancelacionToken);
 
         if (cancion == null)
             return NotFound();
@@ -79,10 +67,10 @@ public class CancionController : ControllerBase
     }
 
     // Consultar canción por id
-    [HttpGet("{id}")]
-    public async Task<ActionResult<BuscarCancionDto>> Buscar(int id, CancellationToken cancelacionToken)
+    [HttpGet("{Slug}")]
+    public async Task<ActionResult<BuscarCancionDto>> Buscar(string Slug, CancellationToken cancelacionToken)
     {
-        var cancion = await _contexto.Canciones.FirstOrDefaultAsync(x => x.Id == id, cancelacionToken);
+        var cancion = await _contexto.Canciones.FirstOrDefaultAsync(x => x.Titulo == Slug, cancelacionToken);
 
         if (cancion == null)
             return NotFound();

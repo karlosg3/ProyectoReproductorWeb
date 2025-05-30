@@ -28,9 +28,7 @@ public class UsuariosController: ControllerBase
 
         if (string.IsNullOrEmpty(nombre) == false)
         {
-            query = query.Where(x => x.Nombre.Contains(nombre) || 
-                                     x.ApellidoMaterno.Contains(nombre) ||
-                                     x.ApellidoMaterno.Contains(nombre));
+            query = query.Where(x => x.Nombre.Contains(nombre));
         }
         var lista = await query.ToListAsync();
         
@@ -56,10 +54,8 @@ public class UsuariosController: ControllerBase
         var nuevoUsuario = new Usuario()
         {
             Nombre = usuario.Nombre,
-            ApellidoPaterno = usuario.ApellidoPaterno,
-            ApellidoMaterno = usuario.ApellidoMaterno,
             NombreUsuario = usuario.NombreUsuario,
-            Contraseña = contraseñaEncriptada,
+            Contrasena = contraseñaEncriptada,
             Habilitado = usuario.Habilitado,
         };
         await _contexto.Usuarios.AddAsync(nuevoUsuario, cancelacionToken);
@@ -79,13 +75,11 @@ public class UsuariosController: ControllerBase
             return new BuscarUsuariosDto();
         
         usuario.Nombre = usuarioDto.Nombre;
-        usuario.ApellidoPaterno = usuarioDto.ApellidoPaterno;
-        usuario.ApellidoMaterno = usuarioDto.ApellidoMaterno;
         usuario.NombreUsuario = usuarioDto.NombreUsuario;
         
-        if (string.IsNullOrEmpty(usuario.Contraseña) == false)
+        if (string.IsNullOrEmpty(usuario.Contrasena) == false)
         {
-            usuario.Contraseña = _hasherServicio.GenerarHash(usuarioDto.Contraseña);
+            usuario.Contrasena = _hasherServicio.GenerarHash(usuarioDto.Contraseña);
         }
         
         await _contexto.SaveChangesAsync(cancelacionToken);

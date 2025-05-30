@@ -1,5 +1,6 @@
 ﻿using Api.Comun.Interfaces;
 using Api.Comun.Modelos.Album;
+using Api.Comun.Utilidades;
 using Api.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -39,10 +40,10 @@ public class AlbumController : ControllerBase
     }
 
     // Modificar álbum
-    [HttpPut("{id}")]
+    [HttpPut("{Slug}")]
     public async Task<IActionResult> Modificar([FromBody] ModificarAlbumDto dto, CancellationToken cancelacionToken)
     {
-        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
+        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Nombre == dto.Slug, cancelacionToken);
 
         if (album == null)
             return NotFound();
@@ -56,10 +57,10 @@ public class AlbumController : ControllerBase
     }
 
     // Habilitar/deshabilitar álbum
-    [HttpPatch("{id}/habilitar")]
+    [HttpPatch("{Slug}/habilitar")]
     public async Task<IActionResult> Habilitar([FromBody] HabilitadoAlbumsDto dto, CancellationToken cancelacionToken)
     {
-        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
+        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Nombre == dto.Slug, cancelacionToken);
 
         if (album == null)
             return NotFound();
@@ -71,10 +72,10 @@ public class AlbumController : ControllerBase
     }
 
     // Consultar álbum por id
-    [HttpGet("{id}")]
-    public async Task<ActionResult<BuscarAlbumsDto>> Buscar(int id, CancellationToken cancelacionToken)
+    [HttpGet("{Slug}")]
+    public async Task<ActionResult<BuscarAlbumsDto>> Buscar(string Slug, CancellationToken cancelacionToken)
     {
-        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Id == id, cancelacionToken);
+        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Nombre == Slug, cancelacionToken);
 
         if (album == null)
             return NotFound();

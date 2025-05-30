@@ -4,6 +4,7 @@ namespace Api.Entidades
     {
         public DateTime Fecha { get; set; }
 
+        public int IdLike { get; set; }
         public int UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
 

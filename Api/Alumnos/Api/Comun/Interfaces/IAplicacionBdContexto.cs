@@ -11,7 +11,11 @@ public interface IAplicacionBdContexto
     public DbSet<Album> Albums { get; set; }
     public DbSet<Artista> Artistas { get; set; }
     public DbSet<Cancion> Canciones { get; set; }
-    public DbSet<GeneroMusical> GenerosMusicales { get; set; }
+    public DbSet<Colaboracion> Colaboraciones { get; set; }
+    public DbSet<Genero> Generos { get; set; }
+    public DbSet<Like> Likes { get; set; }
+    public DbSet<Playlist> Playlists { get; set; }
+    public DbSet<Seguimiento> Seguimientos { get; set; }
     Task<int> SaveChangesAsync(CancellationToken cancelacionToken);
     int SaveChanges();
     Task<int> ExecutarSqlComandoAsync(string comandoSql, CancellationToken cancelacionToken);

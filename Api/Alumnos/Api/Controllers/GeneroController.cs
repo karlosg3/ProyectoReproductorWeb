@@ -9,11 +9,11 @@ namespace Api.Controllers;
 // [Authorize]
 [Route("GeneroMusical")]
 [ApiController]
-public class GeneroMusicalController : ControllerBase
+public class GeneroController : ControllerBase
 {
     private readonly IAplicacionBdContexto _contexto;
 
-    public GeneroMusicalController(IAplicacionBdContexto contexto)
+    public GeneroController(IAplicacionBdContexto contexto)
     {
         _contexto = contexto;
     }
@@ -22,13 +22,13 @@ public class GeneroMusicalController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<string>> RegistrarGenero([FromBody] CrearGeneroMusicalDto dto, CancellationToken cancelacionToken)
     {
-        var nuevoGenero = new GeneroMusical
+        var nuevoGenero = new Genero
         {
             Nombre = dto.Nombre,
             Slug = dto.Nombre.ToLower().Replace(" ", "-") // Generación de slug simple
         };
 
-        await _contexto.GenerosMusicales.AddAsync(nuevoGenero, cancelacionToken);
+        await _contexto.Generos.AddAsync(nuevoGenero, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
 
         return Ok(nuevoGenero.Slug);
@@ -38,7 +38,7 @@ public class GeneroMusicalController : ControllerBase
     [HttpPut("{slug}")]
     public async Task<IActionResult> ModificarGenero([FromBody] ModificarGeneroMusicalDto dto, CancellationToken cancelacionToken)
     {
-        var genero = await _contexto.GenerosMusicales
+        var genero = await _contexto.Generos
             .FirstOrDefaultAsync(x => x.Slug == dto.Slug, cancelacionToken);
 
         if (genero == null)

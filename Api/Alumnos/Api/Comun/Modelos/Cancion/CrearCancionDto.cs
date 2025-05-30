@@ -15,6 +15,7 @@ namespace Api.Comun.Modelos.Cancion
         public int IdArtista { get; set; }
 
         public string Portada { get; set; }
+        public List<int> IdsArtistas { get; set; }
 
         public DateOnly FechaDeLanzamiento { get; set; }
 

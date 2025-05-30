@@ -22,7 +22,7 @@ public class UsuarioSesionServicio : IUsuariosSesionServicio
         CancellationToken cancelacionToken)
     {
         var usuario = _contexto.Usuarios
-            .FirstOrDefault(x => x.CorreoElectronico == inicioSesion.UsuarioNombre
+            .FirstOrDefault(x => x.NombreUsuario == inicioSesion.UsuarioNombre
              && x.Contrasena == inicioSesion.Contrasena);
         
         if (usuario == null)

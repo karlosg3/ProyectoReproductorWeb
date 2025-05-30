@@ -6,5 +6,6 @@ namespace Api.Comun.Modelos.GenerosMusicales
     {
         [Required]
         public string Nombre { get; set; } = string.Empty; /*Para que no sea null*/
+        public string Slug { get; set; }
     }
 }

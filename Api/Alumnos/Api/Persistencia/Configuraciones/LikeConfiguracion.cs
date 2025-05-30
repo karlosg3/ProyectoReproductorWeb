@@ -7,6 +7,8 @@ namespace Api.Persistencia.Configuraciones
     {
         public void Configure(EntityTypeBuilder<Like> constructor)
         {
+            constructor.HasKey(l => new { l.UsuarioId, l.CancionId });
+            
             constructor
                 .HasOne(u => u.Usuario)
                 .WithMany(l => l.Likes)

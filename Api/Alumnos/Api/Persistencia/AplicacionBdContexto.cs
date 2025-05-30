@@ -15,18 +15,19 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     public AplicacionBdContexto(DbContextOptions opciones) : base(opciones)
     {
     }
-    public DbSet<Artista> Artistas { get; set; }
-    public DbSet<Genero> Generos { get; set; }
     public DbSet<Album> Albums { get; set; }
+    public DbSet<AlbumArtista> AlbumArtistas { get; set; }
+    public DbSet<AlbumGenero> AlbumGeneros { get; set; }
+    public DbSet<Artista> Artistas { get; set; }
     public DbSet<Cancion> Canciones { get; set; }
-    public DbSet<Usuario> Usuarios { get; set; }
-    public DbSet<Playlist> Playlists { get; set; }
     public DbSet<CancionPlaylist> CancionPlaylists { get; set; }
-    public DbSet<Like> Likes { get; set; }
-    public DbSet<Seguimiento> Seguimientos { get; set; }
     public DbSet<Colaboracion> Colaboraciones { get; set; }
-    public DbSet<SesionUsuario> SesionesUsuario { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public DbSet<GeneroMusical> GenerosMusicales { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public DbSet<Genero> Generos { get; set; }
+    public DbSet<Like> Likes { get; set; }
+    public DbSet<Playlist> Playlists { get; set; }
+    public DbSet<Seguimiento> Seguimientos { get; set; }
+    public DbSet<SesionUsuario> SesionesUsuario { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; }
 
     public AplicacionBdContexto(DbContextOptions<DbContext> options)
         : base(options)
@@ -120,6 +121,12 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
 
         constructor.Entity<Colaboracion>()
             .HasKey(c => new { c.CancionId, c.ArtistaId });
+        
+        constructor.Entity<Like>()
+            .HasKey(l => new { l.UsuarioId, l.CancionId });
+        
+        constructor.Entity<Seguimiento>()
+            .HasKey(s => new { s.UsuarioId, s.ObjetivoId });
 
         // Configuraciones adicionales según sea necesario
 

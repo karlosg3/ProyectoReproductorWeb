@@ -6,6 +6,7 @@
         public int UsuarioId { get; set; }
         public string ObjetivoTipo { get; set; }
         public int IdObjetivo { get; set; }
+        public bool Activo { get; set; }
         public DateTime Fecha { get; set; }
     }
 }

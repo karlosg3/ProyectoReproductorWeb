@@ -10,7 +10,7 @@ namespace Api.Entidades
         public string ArchivoAudio { get; set; }
         public int NumeroPista { get; set; }
         public int Reproducciones { get; set; }
-        public DateTime FechaLanzamiento { get; set; }
+        public DateOnly FechaLanzamiento { get; set; }
 
         public int AlbumId { get; set; }
         public Album Album { get; set; }

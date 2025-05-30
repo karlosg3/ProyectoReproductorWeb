@@ -1,5 +1,6 @@
 ﻿using Api.Comun.Interfaces;
 using Api.Comun.Modelos.Artista;
+using Api.Comun.Utilidades;
 using Api.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -37,16 +38,14 @@ public class ArtistaController : ControllerBase
     }
 
     // Modificar artista
-    [HttpPut("{id}")]
+    [HttpPut("{Slug}")]
     public async Task<IActionResult> Modificar([FromBody] ModificarArtistaDto dto, CancellationToken cancelacionToken)
     {
-        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
+        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Nombre == dto.Slug, cancelacionToken);
 
         if (artista == null)
             return NotFound();
-
-        artista.Nombre = dto.Nombre;
-        artista.Imagen = dto.Imagen;
+        
         artista.Descripcion = dto.Descripcion;
         artista.Slug = dto.Nombre.ToLower().Replace(" ", "-");
 
@@ -56,10 +55,10 @@ public class ArtistaController : ControllerBase
     }
 
     // Habilitar/deshabilitar artista
-    [HttpPatch("{id}/habilitar")]
+    [HttpPatch("{Slug}/habilitar")]
     public async Task<IActionResult> Habilitar([FromBody] HabilitarArtistaDto dto, CancellationToken cancelacionToken)
     {
-        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
+        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Nombre == dto.Slug, cancelacionToken);
 
         if (artista == null)
             return NotFound();
@@ -71,10 +70,10 @@ public class ArtistaController : ControllerBase
     }
 
     // Consultar artista por id
-    [HttpGet("{id}")]
-    public async Task<ActionResult<BuscarArtistaDto>> Buscar(int id, CancellationToken cancelacionToken)
+    [HttpGet("{Slug}")]
+    public async Task<ActionResult<BuscarArtistaDto>> Buscar(string Slug, CancellationToken cancelacionToken)
     {
-        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Id == id, cancelacionToken);
+        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Nombre == Slug, cancelacionToken);
 
         if (artista == null)
             return NotFound();
