@@ -15,14 +15,11 @@ namespace Api.Entidades
         public int AlbumId { get; set; }
         public Album Album { get; set; }
 
-        public int ArtistaId { get; set; }
-        public Artista Artista { get; set; }
-
-        public String Slug { get; set; }
-        public Boolean Habilitado { get; set; }
+        public string Slug { get; set; }
+        public bool Habilitado { get; set; }
 
         public ICollection<Colaboracion> Colaboraciones { get; set; }
         public ICollection<CancionPlaylist> CancionPlaylists { get; set; }
-        public ICollection<HistorialReproduccion> HistorialReproducciones { get; set; }
+        public ICollection<Like> Likes { get; set; } 
     }
 }

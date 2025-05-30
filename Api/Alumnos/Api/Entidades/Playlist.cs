@@ -9,11 +9,13 @@ namespace Api.Entidades
         public DateTime FechaCreacion { get; set; }
         public bool EsPublica { get; set; }
 
-        public int UsuarioId { get; set; }
+        
         public Usuario Usuario { get; set; }
-        public String Slug { get; set; }
-        public Boolean Habilitado { get; set; }
+        public string Slug { get; set; }
+        public bool Habilitado { get; set; }
 
+
+        public int UsuarioId { get; set; }
         public ICollection<CancionPlaylist> CancionPlaylists { get; set; }
     }
 }

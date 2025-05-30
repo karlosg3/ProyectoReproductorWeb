@@ -11,9 +11,9 @@ namespace Api.Persistencia.Configuraciones
             constructor.HasKey(s => new { s.UsuarioId, s.ObjetivoId });
 
             constructor
-                .HasOne<Usuario>()
+                .HasMany(u => u.Usuario)
                 .WithMany(s => s.Seguimientos)
-                .HasForeignKey(s => s.UsuarioId);
+                .UsingEntity(t => t.ToTable("Siguiendo"));
 
             constructor
                 .HasIndex(s => new { s.ObjetivoTipo, s.ObjetivoId });

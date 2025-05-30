@@ -18,17 +18,16 @@ public class Usuario
 
 
     public string Slug { get; set; }
-    public Boolean Habilitado { get; set; } = true;
+    public bool Habilitado { get; set; } = true;
 
     //Relacion con Playlist
+    public int PlaylistId { get; set; }
     public ICollection<Playlist> Playlists { get; set; }
 
     //Relacion con Seguimiento
-    public int SeguimientoId { get; set; }
     public ICollection<Seguimiento> Seguimientos { get; set; }
 
     //Relacion con SesionUsuario
-    public int SesionId { get; set; }
     public ICollection<SesionUsuario> SesionesUsuarios { get; set; }
 
     public string ObtenerDescripcionParaSlug()
