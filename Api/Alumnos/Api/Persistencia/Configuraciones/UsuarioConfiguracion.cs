@@ -9,5 +9,4 @@ public class UsuarioConfiguracion
     {
         constructor.HasKey(u => u.Id);
     }
-
 }

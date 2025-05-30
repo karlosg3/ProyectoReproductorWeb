@@ -10,8 +10,8 @@ public class SesionUsuarioConfiguracion
         constructor.HasKey(u => u.Id);
         constructor
             .HasOne(s => s.Usuario)
-            .WithMany(su => su.SesionesUsuarios)
-            .HasForeignKey(u => u.UsuarioId);
+            .WithMany(u => u.SesionesUsuarios)
+            .HasForeignKey(s => s.IdUsuario);
     }
 
 }

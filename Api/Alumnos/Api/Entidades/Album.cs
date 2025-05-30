@@ -10,7 +10,7 @@ namespace Api.Entidades
         [Required]
         public DateTime FechaSalida { get; set; } = DateTime.Now;
         [Required]
-        public TimeOnly Duracion { get; set; } 
+        public TimeSpan Duracion { get; set; } 
         [Required]
         public int CantidadCanciones { get; set; }
         [Required]

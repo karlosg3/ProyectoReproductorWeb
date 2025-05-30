@@ -8,16 +8,17 @@ namespace Api.Persistencia.Configuraciones
     {
         public void Configure(EntityTypeBuilder<CancionPlaylist> constructor)
         {
-            constructor.HasKey(cp => new { cp.CancionId, cp.PlaylistId });
-            constructor
-                .HasOne(c => c.Cancion)
-                .WithMany(cp => cp.CancionPlaylists)
-                .HasForeignKey(c => c.CancionId);
+            constructor.HasKey(cp => new { cp.IdPlaylist, cp.IdCancion });
 
             constructor
-                .HasOne(p => p.Playlist)
-                .WithMany(cp => cp.CancionPlaylists)
-                .HasForeignKey(p => p.PlaylistId);
+                .HasOne(cp => cp.Playlist)
+                .WithMany(p => p.CancionPlaylists)
+                .HasForeignKey(cp => cp.IdPlaylist);
+
+            constructor
+                .HasOne(cp => cp.Cancion)
+                .WithMany(c => c.CancionPlaylists)
+                .HasForeignKey(cp => cp.IdCancion);
         }
     }
 }
