@@ -12,5 +12,6 @@
         public ICollection<Album> Albums { get; set; } = new List<Album>();
         public ICollection<Cancion> Canciones { get; set; } = new List<Cancion>();
         public ICollection<Colaboracion> Colaboraciones { get; set; } = new List<Colaboracion>();
+        public ICollection<AlbumArtista> AlbumArtistas { get; set; }
     }
 }

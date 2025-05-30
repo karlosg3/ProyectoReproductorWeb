@@ -56,8 +56,7 @@ public class AlbumController : ControllerBase
             Artista = album.Artista,
             FechaSalida = album.FechaSalida,
             Genero = album.Genero,
-            Portada = album.Portada,
-            Descripcion = album.Descripcion
+            Portada = album.Portada
         };
         await _contexto.Albums.AddAsync(nuevoAlbum, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
@@ -74,8 +73,6 @@ public class AlbumController : ControllerBase
 
         if (album == null)
             return new BuscarAlbumsDto();
-
-        album.Descripcion = albumDto.Descripcion;
 
         await _contexto.SaveChangesAsync(cancelacionToken);
 

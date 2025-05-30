@@ -1,4 +1,4 @@
-﻿using Api.Comun.Modelos.AlbumGenero;
+﻿using Api.Entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

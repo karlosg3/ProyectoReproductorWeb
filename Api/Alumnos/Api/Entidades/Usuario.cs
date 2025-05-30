@@ -12,8 +12,6 @@ public class Usuario
     public string Rol { get; set; }
     public DateTime FechaRegistro { get; set; }
 
-
-    public ICollection<HistorialReproduccion> HistorialReproducciones { get; set; }
     public ICollection<Like> Likes { get; set; }
 
 
@@ -21,7 +19,6 @@ public class Usuario
     public bool Habilitado { get; set; } = true;
 
     //Relacion con Playlist
-    public int PlaylistId { get; set; }
     public ICollection<Playlist> Playlists { get; set; }
 
     //Relacion con Seguimiento
