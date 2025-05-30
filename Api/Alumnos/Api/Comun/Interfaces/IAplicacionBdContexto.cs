@@ -1,5 +1,6 @@
 using Api.Entidades;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace Api.Comun.Interfaces;
 
@@ -8,7 +9,7 @@ public interface IAplicacionBdContexto
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<SesionUsuario> SesionesUsuario { get; set; }
     public DbSet<Album> Albums { get; set; }
-
+    public DbSet<Artista> Artistas { get; set; }
     public DbSet<Cancion> Canciones { get; set; }
     public DbSet<GeneroMusical> GenerosMusicales { get; set; }
     Task<int> SaveChangesAsync(CancellationToken cancelacionToken);
