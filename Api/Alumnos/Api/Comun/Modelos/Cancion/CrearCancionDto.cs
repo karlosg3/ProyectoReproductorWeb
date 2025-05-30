@@ -20,5 +20,7 @@ namespace Api.Comun.Modelos.Cancion
 
         public bool Habilitado { get; set; }
 
+        public int NumeroPista { get; set; }
+
     }
 }

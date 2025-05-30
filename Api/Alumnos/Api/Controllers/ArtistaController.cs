@@ -1,99 +1,92 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Api.Comun.Interfaces;
+using Api.Comun.Modelos.Artista;
 using Api.Entidades;
-using Api.Persistencia; 
-using Api.Comun.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace Api.Controllers
+namespace Api.Controllers;
+
+[Route("Artista")]
+[ApiController]
+public class ArtistaController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ArtistaController : ControllerBase
+    private readonly IAplicacionBdContexto _contexto;
+
+    public ArtistaController(IAplicacionBdContexto contexto)
     {
-        private readonly AplicacionBdContexto _context;
+        _contexto = contexto;
+    }
 
-        public ArtistaController(AplicacionBdContexto context)
+    // Crear artista
+    [HttpPost]
+    public async Task<ActionResult<int>> Crear([FromBody] CrearArtistaDto dto, CancellationToken cancelacionToken)
+    {
+        var artista = new Artista
         {
-            _context = context;
-        }
+            Nombre = dto.Nombre,
+            Imagen = dto.Imagen,
+            Descripcion = dto.Descripcion,
+            Slug = dto.Nombre.ToLower().Replace(" ", "-"),
+            Habilitado = true
+        };
 
-        // GET: api/artista
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Artista>>> GetArtistas()
-        {
-            return await _context.Artistas.ToListAsync();
-        }
+        await _contexto.Artistas.AddAsync(artista, cancelacionToken);
+        await _contexto.SaveChangesAsync(cancelacionToken);
 
-        // GET: api/artista/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Artista>> GetArtista(int id)
-        {
-            var artista = await _context.Artistas.FindAsync(id);
-            if (artista == null)
-            {
-                return NotFound();
-            }
-            return artista;
-        }
+        return Ok(artista.Id);
+    }
 
-        // POST: api/artista
-        [HttpPost]
-        public async Task<ActionResult<Artista>> CrearArtista(Artista artista)
-        {
-            _context.Artistas.Add(artista);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetArtista), new { id = artista.Id }, artista);
-        }
+    // Modificar artista
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Modificar([FromBody] ModificarArtistaDto dto, CancellationToken cancelacionToken)
+    {
+        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
 
-        // PUT: api/artista/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> ActualizarArtista(int id, Artista artista)
-        {
-            if (id != artista.Id)
-            {
-                return BadRequest();
-            }
+        if (artista == null)
+            return NotFound();
 
-            _context.Entry(artista).State = EntityState.Modified;
+        artista.Nombre = dto.Nombre;
+        artista.Imagen = dto.Imagen;
+        artista.Descripcion = dto.Descripcion;
+        artista.Slug = dto.Nombre.ToLower().Replace(" ", "-");
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ArtistaExiste(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        await _contexto.SaveChangesAsync(cancelacionToken);
 
-            return NoContent();
-        }
+        return Ok(dto);
+    }
 
-        // DELETE: api/artista/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> EliminarArtista(int id)
-        {
-            var artista = await _context.Artistas.FindAsync(id);
-            if (artista == null)
-            {
-                return NotFound();
-            }
+    // Habilitar/deshabilitar artista
+    [HttpPatch("{id}/habilitar")]
+    public async Task<IActionResult> Habilitar([FromBody] HabilitarArtistaDto dto, CancellationToken cancelacionToken)
+    {
+        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
 
-            _context.Artistas.Remove(artista);
-            await _context.SaveChangesAsync();
+        if (artista == null)
+            return NotFound();
 
-            return NoContent();
-        }
+        artista.Habilitado = dto.Habilitado;
+        await _contexto.SaveChangesAsync(cancelacionToken);
 
-        private bool ArtistaExiste(int id)
-        {
-            return _context.Artistas.Any(e => e.Id == id);
-        }
+        return Ok();
+    }
+
+    // Consultar artista por id
+    [HttpGet("{id}")]
+    public async Task<ActionResult<BuscarArtistaDto>> Buscar(int id, CancellationToken cancelacionToken)
+    {
+        var artista = await _contexto.Artistas.FirstOrDefaultAsync(x => x.Id == id, cancelacionToken);
+
+        if (artista == null)
+            return NotFound();
+
+        return Ok(artista.ConvertirDto());
+    }
+
+    // Consultar todos los artistas
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<BuscarArtistaDto>>> BuscarTodos(CancellationToken cancelacionToken)
+    {
+        var lista = await _contexto.Artistas.ToListAsync(cancelacionToken);
+        return Ok(lista.ConvertAll(x => x.ConvertirDto()));
     }
 }

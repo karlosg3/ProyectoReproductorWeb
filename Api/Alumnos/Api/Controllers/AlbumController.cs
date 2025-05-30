@@ -1,98 +1,92 @@
 ﻿using Api.Comun.Interfaces;
 using Api.Comun.Modelos.Album;
-using Api.Comun.Modelos.Usuarios;
-using Api.Comun.Utilidades;
 using Api.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Api.Controllers;
 
-//[Authorize]
-[Route("album")]
+[Route("Album")]
+[ApiController]
 public class AlbumController : ControllerBase
 {
     private readonly IAplicacionBdContexto _contexto;
-  
 
     public AlbumController(IAplicacionBdContexto contexto)
-        
     {
         _contexto = contexto;
-        
     }
 
-    [HttpGet]
-    public async Task<List<BuscarAlbumsDto>> ObtenerAlbums(string nombre, bool habilitado)
-    {
-        var query = _contexto.Albums.Where(x => x.Habilitado == habilitado);
-
-        if (string.IsNullOrEmpty(nombre) == false)
-        {
-            query = query.Where(x => x.Nombre.Contains(nombre));
-        }
-        var lista = await query.ToListAsync();
-
-        return lista.ConvertAll(x => x.ConvertirDto());
-    }
-
-    [HttpGet("{slug}")]
-    public async Task<BuscarAlbumsDto> ObtenerAlbums(string slug, CancellationToken cancelacionToken)
-    {
-        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Slug == slug, cancelacionToken);
-
-        if (album == null)
-            return new BuscarAlbumsDto();
-
-        return album.ConvertirDto();
-    }
-
+    // Crear álbum
     [HttpPost]
-    public async Task<string> RegistrarAlbum([FromBody] CrearAlbumsDto album, CancellationToken cancelacionToken)
+    public async Task<ActionResult<int>> Crear([FromBody] CrearAlbumsDto dto, CancellationToken cancelacionToken)
     {
-        var nuevoAlbum = new Album()
+        var album = new Album
         {
-            Nombre = album.Nombre,
-            Artista = album.Artista,
-            FechaSalida = album.FechaSalida,
-            Genero = album.Genero,
-            Portada = album.Portada
+            Nombre = dto.Nombre,
+            FechaSalida = dto.FechaSalida,
+            Duracion = dto.Duracion,
+            CantidadCanciones = dto.CantidadCanciones,
+            Portada = dto.Portada,
+            Slug = dto.Nombre.ToLower().Replace(" ", "-"),
+            Habilitado = true
         };
-        await _contexto.Albums.AddAsync(nuevoAlbum, cancelacionToken);
+
+        await _contexto.Albums.AddAsync(album, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
 
-        return nuevoAlbum.Slug;
+        return Ok(album.Id);
     }
 
-    [HttpPut("{slug}")]
-    public async Task<BuscarAlbumsDto> ModificarAlbum([FromBody] ModificarAlbumDto albumDto,
-        CancellationToken cancelacionToken)
+    // Modificar álbum
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Modificar([FromBody] ModificarAlbumDto dto, CancellationToken cancelacionToken)
     {
-        var album = await _contexto.Albums
-            .FirstOrDefaultAsync(x => x.Slug == albumDto.Slug, cancelacionToken);
+        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
 
         if (album == null)
-            return new BuscarAlbumsDto();
+            return NotFound();
+
+        // Puedes actualizar el slug si quieres, según tus reglas
+        album.Slug = dto.Descripcion.ToLower().Replace(" ", "-");
 
         await _contexto.SaveChangesAsync(cancelacionToken);
 
-        return album.ConvertirDto();
+        return Ok(dto);
     }
 
-    [HttpPatch("{slug}")]
-    public async Task<bool> CambiarHabilitado([FromBody] HabilitadoAlbumsDto album,
-        CancellationToken cancelacionToken)
+    // Habilitar/deshabilitar álbum
+    [HttpPatch("{id}/habilitar")]
+    public async Task<IActionResult> Habilitar([FromBody] HabilitadoAlbumsDto dto, CancellationToken cancelacionToken)
     {
-        var entidad = await _contexto.Albums.FirstOrDefaultAsync(x => x.Slug == album.Slug, cancelacionToken);
+        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Id == dto.Id, cancelacionToken);
 
-        if (entidad == null)
-            return false;
+        if (album == null)
+            return NotFound();
 
-        entidad.Habilitado = album.Habilitado;
-
+        album.Habilitado = dto.Habilitado;
         await _contexto.SaveChangesAsync(cancelacionToken);
 
-        return true;
+        return Ok();
+    }
+
+    // Consultar álbum por id
+    [HttpGet("{id}")]
+    public async Task<ActionResult<BuscarAlbumsDto>> Buscar(int id, CancellationToken cancelacionToken)
+    {
+        var album = await _contexto.Albums.FirstOrDefaultAsync(x => x.Id == id, cancelacionToken);
+
+        if (album == null)
+            return NotFound();
+
+        return Ok(album.ConvertirDto());
+    }
+
+    // Consultar todos los álbumes
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<BuscarAlbumsDto>>> BuscarTodos(CancellationToken cancelacionToken)
+    {
+        var lista = await _contexto.Albums.ToListAsync(cancelacionToken);
+        return Ok(lista.ConvertAll(x => x.ConvertirDto()));
     }
 }
-
