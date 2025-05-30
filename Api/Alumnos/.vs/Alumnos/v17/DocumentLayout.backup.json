@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\ELIAZAR ROJO\\Documents\\Master\\Universidad\\6to Semestre sistemas\\Programaci\u00F3n Web\\Proyectos React\\ProyectoReproductorWeb\\Api\\Alumnos\\",
   "Documents": [
     {
@@ -9,6 +10,37 @@
     {
       "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\eliazar rojo\\documents\\master\\universidad\\6to semestre sistemas\\programaci\u00F3n web\\proyectos react\\proyectoreproductorweb\\api\\alumnos\\api\\comun\\modelos\\usuarios\\crearusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\comun\\modelos\\usuarios\\crearusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\artistaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\artistaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\albumconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\albumconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\albumartistaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\albumartistaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\artista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\artistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\artistacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\cesar\\onedrive\\escritorio\\proyectoweb\\proyectoreproductorweb\\api\\alumnos\\api\\entidades\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\entidades\\cancion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -18,6 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": -1,
           "Children": []
         }
@@ -64,6 +97,99 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T04:10:53.719Z",
+=======
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlbumConfiguracion.cs",
+              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:07:53.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlbumArtistaConfiguracion.cs",
+              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\AlbumArtistaConfiguracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:07:51.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Album.cs",
+              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Album.cs",
+              "RelativeDocumentMoniker": "Api\\Entidades\\Album.cs",
+              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Album.cs",
+              "RelativeToolTip": "Api\\Entidades\\Album.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T05:51:11.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArtistaController.cs",
+              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\ArtistaController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\ArtistaController.cs",
+              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\ArtistaController.cs",
+              "RelativeToolTip": "Api\\Controllers\\ArtistaController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T05:37:03.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cancion.cs",
+              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Cancion.cs",
+              "RelativeDocumentMoniker": "Api\\Entidades\\Cancion.cs",
+              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Cancion.cs",
+              "RelativeToolTip": "Api\\Entidades\\Cancion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T05:34:25.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArtistaConfiguracion.cs",
+              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\ArtistaConfiguracion.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\ArtistaConfiguracion.cs",
+              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\ArtistaConfiguracion.cs",
+              "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\ArtistaConfiguracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T05:26:56.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Artista.cs",
+              "DocumentMoniker": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Artista.cs",
+              "RelativeDocumentMoniker": "Api\\Entidades\\Artista.cs",
+              "ToolTip": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Entidades\\Artista.cs",
+              "RelativeToolTip": "Api\\Entidades\\Artista.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T04:53:57.033Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             }
           ]
