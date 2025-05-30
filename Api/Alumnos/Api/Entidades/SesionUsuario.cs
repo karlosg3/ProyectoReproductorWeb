@@ -5,14 +5,20 @@ namespace Api.Entidades
     public class SesionUsuario
     {
         [Key]
-        public int Id { get; set; }   
+        public int Id { get; set; }
+        [Required]
         public bool Valido { get; set; }
-        public DateTime UltimoUso { get; set; }
-        public DateTime FechaInicio { get; set; }
+        [Required]
+        public DateTime UltimoUso { get; set; } = DateTime.Now;
+        [Required]
+        public DateTime FechaInicio { get; set; } = DateTime.Now;
         public DateTime? FechaFin { get; set; }
-        public bool EsPersistente { get; set; }
+        [Required]
+        public bool EsPersistente { get; set; } = true;
 
-        public int UsuarioId { get; set; }
+        //Relacion a Uno
+        [Required]
+        public int IdUsuario { get; set; }
         public Usuario Usuario { get; set; }
 
     }

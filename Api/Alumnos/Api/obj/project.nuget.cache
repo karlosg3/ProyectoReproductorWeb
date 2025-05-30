@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p37UIDgexJo=",
+  "dgSpecHash": "bdV+P+2S8vs=",
   "success": true,
-  "projectFilePath": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\artur\\Docs\\Portafolio\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artur\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\artur\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -63,15 +63,5 @@
     "C:\\Users\\artur\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\artur\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
-      "warningLevel": 1,
-      "filePath": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

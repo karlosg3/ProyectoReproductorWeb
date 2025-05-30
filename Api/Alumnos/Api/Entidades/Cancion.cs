@@ -1,25 +1,34 @@
-﻿using Api.Comun.Interfaces;
+﻿using System.ComponentModel.DataAnnotations;
+using Api.Comun.Interfaces;
 
 namespace Api.Entidades
 {
     public class Cancion
     {
         public int Id { get; set; }
+        [Required]
         public string Titulo { get; set; }
-        public int Duracion { get; set; }
+        [Required]
+        public TimeOnly Duracion { get; set; }
+        [Required]
         public string ArchivoAudio { get; set; }
+        [Required]
         public int NumeroPista { get; set; }
-        public int Reproducciones { get; set; }
-        public DateOnly FechaLanzamiento { get; set; }
-
-        public int AlbumId { get; set; }
-        public Album Album { get; set; }
-
+        [Required]
+        public DateTime FechaLanzamiento { get; set; } = DateTime.Now;
         public string Slug { get; set; }
-        public bool Habilitado { get; set; }
+        [Required]
+        public bool Habilitado { get; set; } = true;
 
-        public ICollection<Colaboracion> Colaboraciones { get; set; }
+        //Relaciones a Uno
+        [Required]
+        public int IdAlbum { get; set; }
+        public Album Album { get; set; }
+        [Required]
+        public int IdArtista { get; set; }
+        public Artista Artista { get; set; }
+
+        //Relaciones Muchos
         public ICollection<CancionPlaylist> CancionPlaylists { get; set; }
-        public ICollection<Like> Likes { get; set; } 
     }
 }
