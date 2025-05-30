@@ -2911,39 +2911,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< Updated upstream
-    "C:\\Users\\Andre\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\cesar\\.nuget\\packages\\": {},
->>>>>>> Stashed changes
+    "C:\\Users\\artur\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
+      "projectUniqueName": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andre\\OneDrive\\Documents\\GitHub\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
-      "projectName": "Api",
-      "projectPath": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cesar\\OneDrive\\Escritorio\\ProyectoWeb\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\obj\\",
->>>>>>> Stashed changes
+      "projectPath": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.csproj",
+      "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
+      "outputPath": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< Updated upstream
-        "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
+        "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2970,7 +2954,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -3020,12 +3004,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< Updated upstream
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "D:\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }
