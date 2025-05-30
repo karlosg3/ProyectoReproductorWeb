@@ -1,4 +1,6 @@
-﻿namespace Api.Comun.Modelos.Album
+﻿using Api.Entidades;
+
+namespace Api.Comun.Modelos.Album
 {
     public class CrearAlbumsDto
     {

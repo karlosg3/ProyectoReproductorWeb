@@ -42,14 +42,14 @@ namespace Api.Controllers
         {
             _context.Artistas.Add(artista);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetArtista), new { id = artista.IdArtista }, artista);
+            return CreatedAtAction(nameof(GetArtista), new { id = artista.Id }, artista);
         }
 
         // PUT: api/artista/5
         [HttpPut("{id}")]
         public async Task<IActionResult> ActualizarArtista(int id, Artista artista)
         {
-            if (id != artista.IdArtista)
+            if (id != artista.Id)
             {
                 return BadRequest();
             }
@@ -93,7 +93,7 @@ namespace Api.Controllers
 
         private bool ArtistaExiste(int id)
         {
-            return _context.Artistas.Any(e => e.IdArtista == id);
+            return _context.Artistas.Any(e => e.Id == id);
         }
     }
 }

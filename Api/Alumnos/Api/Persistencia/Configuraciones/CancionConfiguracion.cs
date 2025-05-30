@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Persistencia.Configuraciones
 {
-    public class CancionesCondifugracion
+    public class CancionConfiguracion
     {
         public void Configure(EntityTypeBuilder<Cancion> constructor)
         {

@@ -17,7 +17,7 @@ namespace Api.Persistencia.Configuraciones
 
             constructor
                 .HasMany(a => a.Generos)
-                .WithMany(g => g.Generos)
+                .WithMany(g => g.Albums)
                 .UsingEntity(j => j.ToTable("AlbumGeneros"));
         }
     }

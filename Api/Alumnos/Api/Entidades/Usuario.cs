@@ -2,21 +2,18 @@ using Api.Comun.Interfaces;
 
 namespace Api.Entidades;
 
-public class Usuario : ISlug
+public class Usuario
 {
     public int Id { get; set; }
     public string Nombre { get; set; }
-    public string ApellidoPaterno { get; set; }
-    public string ApellidoMaterno { get; set; }
-    public string NombreUsuario { get; set; }
-    public string Contraseña { get; set; }
-    public bool Habilitado { get; set; }
-    public string Slug { get; set; }
-    
-    public virtual List<SesionUsuario> Sesiones  { get; set; }
+    public string CorreoElectronico { get; set; }
+    public string Contrasena { get; set; }
+    public string FotoPerfil { get; set; }
+    public string Rol { get; set; }
+    public DateTime FechaRegistro { get; set; }
 
-    public string ObtenerDescripcionParaSlug()
-    {
-        return $"{NombreUsuario}";
-    }
+    public ICollection<Playlist> Playlists { get; set; }
+    public ICollection<HistorialReproduccion> HistorialReproducciones { get; set; }
+    public ICollection<Like> Likes { get; set; }
+    public ICollection<Seguimiento> Seguimientos { get; set; }
 }
