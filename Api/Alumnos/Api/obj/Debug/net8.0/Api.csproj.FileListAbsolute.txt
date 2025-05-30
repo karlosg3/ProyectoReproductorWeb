@@ -78,3 +78,14 @@
 /Users/pompon/RiderProjects/Alumnos/Api/obj/Debug/net8.0/Api.pdb
 /Users/pompon/RiderProjects/Alumnos/Api/obj/Debug/net8.0/Api.genruntimeconfig.cache
 /Users/pompon/RiderProjects/Alumnos/Api/obj/Debug/net8.0/ref/Api.dll
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.csproj.AssemblyReference.cache
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.AssemblyInfoInputs.cache
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.AssemblyInfo.cs
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.csproj.CoreCompileInputs.cache
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cs
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.sourcelink.json
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.dll
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\refint\Api.dll
+E:\Karlos\Portafolio\Desarrollo Web\ProyectoReproductorWeb\Api\Alumnos\Api\obj\Debug\net8.0\Api.pdb

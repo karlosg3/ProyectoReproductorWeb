@@ -1,5 +1,6 @@
 ﻿using Api.Comun.Interfaces;
 using Api.Comun.Modelos.Album;
+using Api.Comun.Modelos.AlbumArtista;
 using Api.Comun.Modelos.Usuarios;
 using Api.Comun.Utilidades;
 using Api.Entidades;
@@ -53,11 +54,10 @@ public class AlbumController : ControllerBase
         var nuevoAlbum = new Album()
         {
             Nombre = album.Nombre,
-            Artista = album.Artista,
             FechaSalida = album.FechaSalida,
-            Genero = album.Genero,
             Portada = album.Portada,
-            Descripcion = album.Descripcion
+            AlbumsArtistas = new List<AlbumArtista>(),
+            AlbumsGeneros = new List<AlbumGenero>()
         };
         await _contexto.Albums.AddAsync(nuevoAlbum, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
@@ -74,8 +74,6 @@ public class AlbumController : ControllerBase
 
         if (album == null)
             return new BuscarAlbumsDto();
-
-        album.Descripcion = albumDto.Descripcion;
 
         await _contexto.SaveChangesAsync(cancelacionToken);
 

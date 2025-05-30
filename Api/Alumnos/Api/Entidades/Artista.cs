@@ -1,4 +1,6 @@
-﻿namespace Api.Entidades
+﻿using Api.Comun.Modelos.AlbumArtista;
+
+namespace Api.Entidades
 {
     public class Artista
     {

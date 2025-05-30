@@ -1,4 +1,6 @@
-﻿namespace Api.Entidades
+﻿using Api.Comun.Modelos.AlbumGenero;
+
+namespace Api.Entidades
 {
     public class Genero
     {
@@ -6,5 +8,6 @@
         public string Nombre { get; set; }
 
         public ICollection<Album> Albums { get; set; }
+        public ICollection<AlbumGenero> AlbumsGeneros { get; set; }
     }
 }

@@ -11,14 +11,9 @@ namespace Api.Persistencia.Configuraciones
             constructor.HasKey(a => a.Id);
 
             constructor
-                .HasOne(a => a.Artista)
-                .WithMany(ar => ar.Canciones)
-                 .HasForeignKey(a => a.IdArtista);
-
-            constructor
-                .HasOne(a => a.Album)
-                .WithMany (a => a.Canciones)
-                .HasForeignKey(a => a.IdAlbum);
+                .HasMany(a => a.CancionArtistas)
+                .WithOne(ar => ar.Cancion)
+                 .HasForeignKey(a => a.Id);
         }
 
     }

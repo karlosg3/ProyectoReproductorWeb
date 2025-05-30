@@ -8,8 +8,17 @@ public class UsuarioConfiguracion
     public void Configure(EntityTypeBuilder<Usuario> constructor)
     {
         constructor.HasKey(u => u.Id);
-        constructor.HasMany(u => u.Sesiones)
-            .WithOne(s => s.UsuarioId);
+        //El usuario puede tener varias sesiones activas
+        constructor
+            .HasMany<SesionUsuario>()
+            .WithOne(s => s.Usuario)
+            .HasForeignKey(s => s.UsuarioId);
+        //El usuario puede seguir a varias artistas, playlists o usuaruios?
+        constructor
+            .HasMany<Seguimiento>()
+            .WithOne(s => s.Usuario)
+            .HasForeignKey(s => s.UsuarioId);
+
     }
 
 }

@@ -3,7 +3,7 @@ namespace Api.Entidades
     public class Like
     {
         public int Id { get; set; }
-        public string Tipo { get; set; } // "album", "cancion", "playlist"
+        public string Tipo { get; set; } // "cancion",
         public int ReferenciaId { get; set; }
         public DateTime Fecha { get; set; }
 
