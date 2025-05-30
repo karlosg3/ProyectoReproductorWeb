@@ -10,6 +10,6 @@ namespace Api.Entidades
         public int CancionId { get; set; }
         public Cancion Cancion { get; set; }
 
-
+        public bool Habilitado { get; set; }
     }
 }

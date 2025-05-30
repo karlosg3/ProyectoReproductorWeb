@@ -9,8 +9,8 @@
         public int CantidadCanciones { get; set; }
         public string Portada { get; set; }
 
-        public String Slug {  get; set; }
-        public Boolean Habilitado { get; set; }
+        public string Slug {  get; set; }
+        public bool Habilitado { get; set; }
 
         public ICollection<Cancion> Canciones { get; set; }
         public ICollection<Artista> Artistas { get; set; }
