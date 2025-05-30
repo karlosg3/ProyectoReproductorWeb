@@ -15,5 +15,7 @@
         public ICollection<Cancion> Canciones { get; set; }
         public ICollection<Artista> Artistas { get; set; }
         public ICollection<Genero> Generos { get; set; }
+        public ICollection<AlbumGenero> AlbumGeneros { get; set; }
+        public ICollection<AlbumArtista> AlbumArtistas { get; set; }
     }
 }

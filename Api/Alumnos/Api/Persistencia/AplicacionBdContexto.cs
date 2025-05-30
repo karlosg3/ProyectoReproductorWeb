@@ -1,6 +1,4 @@
 using Api.Comun.Interfaces;
-using Api.Comun.Modelos.AlbumArtista;
-using Api.Comun.Modelos.AlbumGenero;
 using Api.Entidades;
 using Api.Persistencia.Configuraciones;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +22,6 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<Playlist> Playlists { get; set; }
     public DbSet<CancionPlaylist> CancionPlaylists { get; set; }
-    public DbSet<HistorialReproduccion> HistorialReproducciones { get; set; }
     public DbSet<Like> Likes { get; set; }
     public DbSet<Seguimiento> Seguimientos { get; set; }
     public DbSet<Colaboracion> Colaboraciones { get; set; }
@@ -34,17 +31,6 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     public AplicacionBdContexto(DbContextOptions<DbContext> options)
         : base(options)
     {
-    }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<CancionPlaylist>()
-            .HasKey(cp => new { cp.PlaylistId, cp.CancionId });
-
-        modelBuilder.Entity<Colaboracion>()
-            .HasKey(c => new { c.CancionId, c.ArtistaId });
-
-        // Configuraciones adicionales según sea necesario
     }
 
 
@@ -129,6 +115,13 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     protected override void OnModelCreating(ModelBuilder constructor)
     {
         constructor.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        constructor.Entity<CancionPlaylist>()
+            .HasKey(cp => new { cp.PlaylistId, cp.CancionId });
+
+        constructor.Entity<Colaboracion>()
+            .HasKey(c => new { c.CancionId, c.ArtistaId });
+
+        // Configuraciones adicionales según sea necesario
 
         base.OnModelCreating(constructor);
     }

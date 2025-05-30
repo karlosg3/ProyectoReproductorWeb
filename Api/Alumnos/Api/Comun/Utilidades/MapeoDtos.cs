@@ -13,9 +13,6 @@ public static class MapeoDtos
         {
             Slug = usuario.Slug,
             Nombre = usuario.Nombre,
-            ApellidoPaterno = usuario.ApellidoPaterno,
-            ApellidoMaterno = usuario.ApellidoMaterno,
-            NombreUsuario = usuario.NombreUsuario,
             Habilitado = usuario.Habilitado,
         };
     }
