@@ -22,7 +22,7 @@ public class UsuarioSesionServicio : IUsuariosSesionServicio
         CancellationToken cancelacionToken)
     {
         var usuario = _contexto.Usuarios
-            .FirstOrDefault(x => x.NombreUsuario == inicioSesion.UsuarioNombre
+            .FirstOrDefault(x => x.Nombre == inicioSesion.UsuarioNombre
              && x.Contrasena == inicioSesion.Contrasena);
         
         if (usuario == null)
@@ -32,7 +32,7 @@ public class UsuarioSesionServicio : IUsuariosSesionServicio
         {
             EsPersistente = inicioSesion.MantenerSesion,
             FechaInicio = DateTime.UtcNow,
-            UsuarioId = usuario.Id,
+            IdUsuario = usuario.Id,
             UltimoUso = DateTime.UtcNow,
             Valido = true
         };

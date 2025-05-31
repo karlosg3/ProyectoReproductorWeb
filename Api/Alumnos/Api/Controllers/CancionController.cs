@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.Controllers;
 
-[Route("Cancion")]
+[Route("api/[controller]")]
 [ApiController]
 public class CancionController : ControllerBase
 {
@@ -25,28 +25,18 @@ public class CancionController : ControllerBase
         var cancion = new Cancion
         {
             Titulo = dto.Titulo,
-            ArchivoAudio = dto.ArchivoDeAudio,
+            Duracion = dto.Duracion,
+            ArchivoAudio = dto.ArchivoAudio,
             NumeroPista = dto.NumeroPista,
-            Reproducciones = 0,
-            FechaLanzamiento = dto.FechaDeLanzamiento,
-            Slug = dto.Titulo.ToLower().Replace(" ", "-"),
-            Habilitado = true,
-            AlbumId = dto.IdAlbum
+            FechaLanzamiento = dto.FechaLanzamiento,
+            Habilitado = dto.Habilitado,
+            IdAlbum = dto.IdAlbum,
+            IdArtista = dto.IdArtista,
+            Slug = dto.Titulo.ToLower().Replace(" ", "-")
         };
 
         await _contexto.Canciones.AddAsync(cancion, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
-        
-        foreach (var idArtista in dto.IdsArtistas)
-        {
-            var colaboracion = new Colaboracion
-            {
-                CancionId = cancion.Id,
-                ArtistaId = idArtista
-            };
-
-            await _contexto.Colaboraciones.AddAsync(colaboracion, cancelacionToken);
-        }
 
         return Ok(cancion.Id);
     }

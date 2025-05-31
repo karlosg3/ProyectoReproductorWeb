@@ -6,7 +6,7 @@ namespace Api.Comun.Modelos.Album
     {
         [Required]
         public string Slug { get; set; }
-        public string Descripcion { get; set; }
+        public string Portada { get; set; }
         public bool Habilitado { get; set; }
     }
 }

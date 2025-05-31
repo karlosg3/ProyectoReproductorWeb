@@ -19,7 +19,7 @@ namespace Api.Entidades
         public string Slug { get; set; }
         [Required]
         public bool Habilitado { get; set; } = true;
-
+        public string Portada { get; set; }
         //Relaciones a Uno
         [Required]
         public int IdAlbum { get; set; }

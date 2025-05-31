@@ -49,12 +49,12 @@ public class UsuariosController: ControllerBase
     [HttpPost]
     public async Task<string> RegistrarUsuario([FromBody] CrearUsuarioDto usuario, CancellationToken cancelacionToken)
     {
-        var contraseñaEncriptada = _hasherServicio.GenerarHash(usuario.Contraseña);
+        var contraseñaEncriptada = _hasherServicio.GenerarHash(usuario.Contrasena);
 
         var nuevoUsuario = new Usuario()
         {
             Nombre = usuario.Nombre,
-            NombreUsuario = usuario.NombreUsuario,
+            Correo = usuario.Correo,
             Contrasena = contraseñaEncriptada,
             Habilitado = usuario.Habilitado,
         };
@@ -75,7 +75,7 @@ public class UsuariosController: ControllerBase
             return new BuscarUsuariosDto();
         
         usuario.Nombre = usuarioDto.Nombre;
-        usuario.NombreUsuario = usuarioDto.NombreUsuario;
+        usuario.Correo = usuarioDto.Correo;
         
         if (string.IsNullOrEmpty(usuario.Contrasena) == false)
         {

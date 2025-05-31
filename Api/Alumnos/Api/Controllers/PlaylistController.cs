@@ -53,10 +53,12 @@ public class PlaylistController : ControllerBase
     {
         var nuevaPlaylist = new Playlist
         {
+            Slug = dto.Nombre.ToLower().Replace(" ", "-"),
             Nombre = dto.Nombre,
             Descripcion = dto.Descripcion,
-            Slug = dto.Nombre.ToLower().Replace(" ", "-"),
-            EsPublica = dto.EsPublica
+            Imagen = dto.Imagen,
+            FechaCreacion = dto.FechaCreacion,
+            IdUsuario = dto.IdUsuario
         };
 
         await _contexto.Playlists.AddAsync(nuevaPlaylist, cancelacionToken);

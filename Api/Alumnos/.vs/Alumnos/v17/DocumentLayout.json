@@ -1,13 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\artur\\Docs\\Portafolio\\ProyectoReproductorWeb\\Api\\Alumnos\\",
+  "WorkspaceRootPath": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\artur\\docs\\portafolio\\proyectoreproductorweb\\api\\alumnos\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\aplicacionbdcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\aplicacionbdcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\cancioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\cancioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\servicios\\usuariosesionservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\servicios\\usuariosesionservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\configuraciones\\albumconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\configuraciones\\albumconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|c:\\users\\artur\\docs\\portafolio\\proyectoreproductorweb\\api\\alumnos\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
@@ -23,23 +47,101 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlaylistController.cs",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\PlaylistController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\PlaylistController.cs",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\PlaylistController.cs",
+              "RelativeToolTip": "Api\\Controllers\\PlaylistController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:30:17.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\UsuariosController.cs",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Api\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAkwE8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:03:35.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CancionController.cs",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\CancionController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\CancionController.cs",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\CancionController.cs",
+              "RelativeToolTip": "Api\\Controllers\\CancionController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wCgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:00:49.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioSesionServicio.cs",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Servicios\\UsuarioSesionServicio.cs",
+              "RelativeDocumentMoniker": "Api\\Servicios\\UsuarioSesionServicio.cs",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Servicios\\UsuarioSesionServicio.cs",
+              "RelativeToolTip": "Api\\Servicios\\UsuarioSesionServicio.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA7wCUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T03:42:05.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlbumConfiguracion.cs",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "RelativeToolTip": "Api\\Persistencia\\Configuraciones\\AlbumConfiguracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T03:32:03.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AplicacionBdContexto.cs",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\AplicacionBdContexto.cs",
+              "RelativeDocumentMoniker": "Api\\Persistencia\\AplicacionBdContexto.cs",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\AplicacionBdContexto.cs",
+              "RelativeToolTip": "Api\\Persistencia\\AplicacionBdContexto.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAYwF8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T03:29:05.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\artur\\Docs\\Portafolio\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\appsettings.Development.json",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Api\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\artur\\Docs\\Portafolio\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\appsettings.Development.json",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\appsettings.Development.json",
               "RelativeToolTip": "Api\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-30T14:24:40.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Api.http",
-              "DocumentMoniker": "C:\\Users\\artur\\Docs\\Portafolio\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.http",
+              "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.http",
               "RelativeDocumentMoniker": "Api\\Api.http",
-              "ToolTip": "C:\\Users\\artur\\Docs\\Portafolio\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.http",
+              "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Api.http",
               "RelativeToolTip": "Api\\Api.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",

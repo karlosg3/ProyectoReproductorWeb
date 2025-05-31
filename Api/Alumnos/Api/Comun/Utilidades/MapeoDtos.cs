@@ -9,6 +9,8 @@ namespace Api.Comun.Utilidades;
 
 public static class MapeoDtos
 {
+
+    //USUARIOS
     public static BuscarUsuariosDto ConvertirDto(this Usuario usuario)
     {
         return new BuscarUsuariosDto()
@@ -19,16 +21,18 @@ public static class MapeoDtos
         };
     }
 
-    public static BuscarAlbumsDto ConvertirDto(this Album album) {
+    //ALBUMS
+    public static BuscarAlbumsDto ConvertirDto(this Album album)
+    {
         return new BuscarAlbumsDto()
         {
             Slug = album.Slug,
             Nombre = album.Nombre,
+            Habilitado = album.Habilitado
         };
-
-
     }
 
+    //CANCIONES
     public static BuscarCancionDto ConvertirDto(this Cancion cancion)
     {
         return new BuscarCancionDto()
@@ -36,9 +40,9 @@ public static class MapeoDtos
             Slug = cancion.Slug,
             Titulo = cancion.Titulo,
         };
-
-
     }
+
+    //ARTISTAS
     public static BuscarArtistaDto ConvertirDto(this Artista artista)
     {
         return new BuscarArtistaDto()
@@ -49,7 +53,8 @@ public static class MapeoDtos
 
 
     }
-    
+
+    //PLAYLISTS
     public static BuscarPlaylistDto ConvertirDto(this Playlist playlist)
     {
         return new BuscarPlaylistDto()
@@ -57,7 +62,12 @@ public static class MapeoDtos
             Slug = playlist.Slug,
             Nombre = playlist.Nombre
         };
-
-
     }
+
+    //CANCIONESPLAYLIST
+
+    //GENEROS
+
+    //SESIONES USUARIO
+
 }

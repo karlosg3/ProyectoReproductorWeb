@@ -16,16 +16,11 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     {
     }
     public DbSet<Album> Albums { get; set; }
-    public DbSet<AlbumArtista> AlbumArtistas { get; set; }
-    public DbSet<AlbumGenero> AlbumGeneros { get; set; }
     public DbSet<Artista> Artistas { get; set; }
     public DbSet<Cancion> Canciones { get; set; }
     public DbSet<CancionPlaylist> CancionPlaylists { get; set; }
-    public DbSet<Colaboracion> Colaboraciones { get; set; }
     public DbSet<Genero> Generos { get; set; }
-    public DbSet<Like> Likes { get; set; }
     public DbSet<Playlist> Playlists { get; set; }
-    public DbSet<Seguimiento> Seguimientos { get; set; }
     public DbSet<SesionUsuario> SesionesUsuario { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
 
@@ -112,7 +107,7 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     {
         return await base.Database.ExecuteSqlRawAsync(comandoSql, parametros, cancelacionToken);
     }
-
+/*
     protected override void OnModelCreating(ModelBuilder constructor)
     {
         constructor.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
@@ -132,4 +127,5 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
 
         base.OnModelCreating(constructor);
     }
+    */
 }

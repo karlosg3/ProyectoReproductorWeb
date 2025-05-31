@@ -1,4 +1,5 @@
-﻿using Api.Entidades;
+﻿using System.Reflection;
+using Api.Entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -11,14 +12,14 @@ namespace Api.Persistencia.Configuraciones
             constructor.HasKey(a => a.Id);
 
             constructor
-                .HasMany(a => a.Artistas)
+                .HasOne(a => a.Artista)
                 .WithMany(ar => ar.Albums)
-                .UsingEntity(j => j.ToTable("AlbumArtistas"));
+                .HasForeignKey(a => a.IdArtista);
 
             constructor
-                .HasMany(a => a.Generos)
+                .HasOne(a => a.Genero)
                 .WithMany(g => g.Albums)
-                .UsingEntity(j => j.ToTable("AlbumGeneros"));
+                .HasForeignKey(a => a.IdGenero);
         }
     }
 }

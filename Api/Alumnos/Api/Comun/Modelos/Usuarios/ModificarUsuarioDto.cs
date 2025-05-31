@@ -7,7 +7,7 @@ public class ModificarUsuarioDto
     [Required] 
     public string Slug { get; set; }
     public string Nombre { get; set; }
-    public string NombreUsuario { get; set; }
+    public string Correo { get; set; }
     public string Contraseña { get; set; }
     public bool Habilitado { get; set; }
     

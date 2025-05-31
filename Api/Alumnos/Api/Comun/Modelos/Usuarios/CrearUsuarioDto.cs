@@ -7,9 +7,9 @@ public class CrearUsuarioDto
     [Required] 
     public string Nombre { get; set; }
     [Required]
-    public string NombreUsuario { get; set; }
+    public string Correo { get; set; }
     [Required]
-    public string Contraseña { get; set; }
+    public string Contrasena { get; set; }
     [Required]
     public bool Habilitado { get; set; }
 }

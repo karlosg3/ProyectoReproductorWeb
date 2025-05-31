@@ -1,5 +1,5 @@
 ﻿using Api.Comun.Interfaces;
-using Api.Comun.Modelos.GenerosMusicales;
+using Api.Comun.Modelos.Genero;
 using Api.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,7 +20,7 @@ public class GeneroController : ControllerBase
 
     // Crear género musical
     [HttpPost]
-    public async Task<ActionResult<string>> RegistrarGenero([FromBody] CrearGeneroMusicalDto dto, CancellationToken cancelacionToken)
+    public async Task<ActionResult<string>> RegistrarGenero([FromBody] CrearGeneroDto dto, CancellationToken cancelacionToken)
     {
         var nuevoGenero = new Genero
         {
@@ -36,7 +36,7 @@ public class GeneroController : ControllerBase
 
     // Modificar género musical
     [HttpPut("{slug}")]
-    public async Task<IActionResult> ModificarGenero([FromBody] ModificarGeneroMusicalDto dto, CancellationToken cancelacionToken)
+    public async Task<IActionResult> ModificarGenero([FromBody] ModificarGeneroDto dto, CancellationToken cancelacionToken)
     {
         var genero = await _contexto.Generos
             .FirstOrDefaultAsync(x => x.Slug == dto.Slug, cancelacionToken);

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.Controllers;
 
-[Route("Artista")]
+[Route("api/controller")]
 [ApiController]
 public class ArtistaController : ControllerBase
 {
