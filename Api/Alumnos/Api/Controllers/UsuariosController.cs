@@ -49,13 +49,14 @@ public class UsuariosController: ControllerBase
     [HttpPost]
     public async Task<string> RegistrarUsuario([FromBody] CrearUsuarioDto usuario, CancellationToken cancelacionToken)
     {
-        var contraseñaEncriptada = _hasherServicio.GenerarHash(usuario.Contrasena);
+ 
 
         var nuevoUsuario = new Usuario()
         {
             Nombre = usuario.Nombre,
+            Slug = usuario.Nombre.ToLower().Replace(" ", "-"),
             Correo = usuario.Correo,
-            Contrasena = contraseñaEncriptada,
+            Contrasena = usuario.Contrasena,
             Habilitado = usuario.Habilitado,
         };
         await _contexto.Usuarios.AddAsync(nuevoUsuario, cancelacionToken);

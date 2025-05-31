@@ -18,7 +18,7 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     public DbSet<Album> Albums { get; set; }
     public DbSet<Artista> Artistas { get; set; }
     public DbSet<Cancion> Canciones { get; set; }
-    public DbSet<CancionPlaylist> CancionPlaylists { get; set; }
+    public DbSet<CancionPlaylist> CancionesPlaylist { get; set; }
     public DbSet<Genero> Generos { get; set; }
     public DbSet<Playlist> Playlists { get; set; }
     public DbSet<SesionUsuario> SesionesUsuario { get; set; }

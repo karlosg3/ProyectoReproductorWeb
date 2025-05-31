@@ -8,7 +8,7 @@ namespace Api.Persistencia.Configuraciones
     {
         public void Configure(EntityTypeBuilder<CancionPlaylist> constructor)
         {
-            constructor.HasKey(cp => new { cp.IdPlaylist, cp.IdCancion });
+            constructor.HasKey(cp => cp.Id);
 
             constructor
                 .HasOne(cp => cp.Playlist)

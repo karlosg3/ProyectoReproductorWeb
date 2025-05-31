@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\persistencia\\aplicacionbdcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\persistencia\\aplicacionbdcontexto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|solutionrelative:api\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54EF631B-3EF1-4A74-85F7-3A59E5503CF8}|Api\\Api.csproj|e:\\karlos\\portafolio\\desarrollo web\\prw\\proyectoreproductorweb\\api\\alumnos\\api\\controllers\\cancioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlaylistController.cs",
               "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\PlaylistController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\PlaylistController.cs",
@@ -59,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\UsuariosController.cs",
               "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Api\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAkwE8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAIwDoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T04:03:35.749Z",
               "EditorCaption": ""
@@ -117,7 +117,7 @@
               "RelativeDocumentMoniker": "Api\\Persistencia\\AplicacionBdContexto.cs",
               "ToolTip": "E:\\Karlos\\Portafolio\\Desarrollo Web\\PRW\\ProyectoReproductorWeb\\Api\\Alumnos\\Api\\Persistencia\\AplicacionBdContexto.cs",
               "RelativeToolTip": "Api\\Persistencia\\AplicacionBdContexto.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAYwF8AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T03:29:05.234Z",
               "EditorCaption": ""

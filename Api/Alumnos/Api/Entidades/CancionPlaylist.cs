@@ -1,9 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api.Entidades
 {
     public class CancionPlaylist
     {
+        public int Id { get; set; }
         [Required]
         public bool Habilitado { get; set; }
         [Required]

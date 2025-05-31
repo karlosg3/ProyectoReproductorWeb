@@ -14,9 +14,7 @@ public class Usuario
     public string Correo { get; set; }
     [Required]
     public string Contrasena { get; set; }
-    [Required]
     public string FotoPerfil { get; set; }
-    [Required]
     public int Rol { get; set; }
     [Required]
     public DateTime FechaRegistro { get; set; } = DateTime.Now;
