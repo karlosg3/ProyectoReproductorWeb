@@ -2,8 +2,8 @@
 {
     public class ModificarOrdenCancionDto
     {
-        public int CancionId { get; set; }
-        public int PlaylistId { get; set; }
+        public int IdCancion { get; set; }
+        public int IdPlaylist { get; set; }
         public int NuevoOrden { get; set; }
     }
 }

@@ -45,7 +45,7 @@ public class GeneroController : ControllerBase
             return NotFound();
 
         genero.Nombre = dto.Nombre;
-        genero.Slug = dto.Slug.ToLower().Replace(" ", "-"); // Opcional: actualizar slug si el nombre cambia
+        genero.Slug = dto.Nombre.ToLower().Replace(" ", "-"); // Opcional: actualizar slug si el nombre cambia
 
         await _contexto.SaveChangesAsync(cancelacionToken);
 

@@ -13,6 +13,7 @@ public interface IAplicacionBdContexto
     public DbSet<Cancion> Canciones { get; set; }
     public DbSet<Genero> Generos { get; set; }
     public DbSet<Playlist> Playlists { get; set; }
+    public DbSet<CancionPlaylist> CancionesPlaylist { get; set; }
     Task<int> SaveChangesAsync(CancellationToken cancelacionToken);
     int SaveChanges();
     Task<int> ExecutarSqlComandoAsync(string comandoSql, CancellationToken cancelacionToken);

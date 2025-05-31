@@ -2,7 +2,8 @@
 {
     public class DeshabilitarCancionDePlaylistDto
     {
-        public int CancionId { get; set; }
-        public int PlaylistId { get; set; }
+        public int IdCancion { get; set; }
+        public int IdPlaylist { get; set; }
+        public bool Habilitado { get; set; }
     }
 }
