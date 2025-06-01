@@ -1,9 +1,8 @@
-namespace Api.Comun.Modelos.Usuarios;
+﻿namespace Api.Comun.Modelos.Listas;
 
-public class BuscarUsuariosDto
+public class BuscarListasDto
 {
     public string Slug { get; set; }
     public string Nombre { get; set; }
-    public string CorreoElectronico { get; set; }
     public bool Habilitado { get; set; }
 }

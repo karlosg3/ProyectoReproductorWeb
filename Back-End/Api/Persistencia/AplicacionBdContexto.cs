@@ -15,6 +15,10 @@ public class AplicacionBdContexto : DbContext, IAplicacionBdContexto
     }
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<SesionUsuario> SesionesUsuario { get; set; }
+    public DbSet<Lista> Listas { get; set; }
+    public DbSet<Tarjeta> Tarjetas { get; set; }
+    public DbSet<UsuarioTarjeta> UsuarioTarjetas { get; set; }
+    public DbSet<Board> Boards { get; set; }
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancelacionToken = default)
     {

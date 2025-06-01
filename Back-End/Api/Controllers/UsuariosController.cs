@@ -29,8 +29,7 @@ public class UsuariosController: ControllerBase
         if (string.IsNullOrEmpty(nombre) == false)
         {
             query = query.Where(x => x.Nombre.Contains(nombre) || 
-                                     x.ApellidoMaterno.Contains(nombre) ||
-                                     x.ApellidoMaterno.Contains(nombre));
+                                     x.CorreoElectronico.Contains(nombre));
         }
         var lista = await query.ToListAsync();
         
@@ -56,9 +55,7 @@ public class UsuariosController: ControllerBase
         var nuevoUsuario = new Usuario()
         {
             Nombre = usuario.Nombre,
-            ApellidoPaterno = usuario.ApellidoPaterno,
-            ApellidoMaterno = usuario.ApellidoMaterno,
-            NombreUsuario = usuario.NombreUsuario,
+            CorreoElectronico = usuario.CorreoElectronico,
             Contraseña = contraseñaEncriptada,
             Habilitado = usuario.Habilitado,
         };
@@ -79,9 +76,7 @@ public class UsuariosController: ControllerBase
             return new BuscarUsuariosDto();
         
         usuario.Nombre = usuarioDto.Nombre;
-        usuario.ApellidoPaterno = usuarioDto.ApellidoPaterno;
-        usuario.ApellidoMaterno = usuarioDto.ApellidoMaterno;
-        usuario.NombreUsuario = usuarioDto.NombreUsuario;
+        usuario.CorreoElectronico = usuarioDto.CorreoElectronico;
         
         if (string.IsNullOrEmpty(usuario.Contraseña) == false)
         {
