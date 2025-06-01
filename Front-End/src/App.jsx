@@ -1,19 +1,62 @@
 // src/App.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
 import initialData from './initial-data';
 import Board from './components/Board';
 import TaskModal from './components/TaskModal';
+import Login from './components/auth/Login';
+import Register from './components/auth/Registrar';
 import { DragDropContext } from '@hello-pangea/dnd';
 import './App.css';
 import EditIcon from './assets/edit.svg';
 import TrashIcon from './assets/trash.svg';
 
+const Route = ({ children, currentUser }) => {
+  if (!currentUser) {
+    return <Navigate to="/login" replace />
+  }
+  return children;
+}
+
 function App() {
+  const [currentUser, setCurrentUser] = useState(null);
   const [data, setData] = useState(initialData);
+  const [isLoading, setIsLoading] = useState(null);
   const [activeBoardId, setActiveBoardId] = useState(data.activeBoardId);
   const [modalState, setModalState] = useState({ isOpen: false, task: null, columnId: null });
 
+  const navigate = UseNavigate();
+  const location = useLocation();
   const activeBoard = data.boards[activeBoardId];
+
+  //Verificar Sesion
+  useEffect(() => {
+    async function initializeApp() {
+      setIsLoading(true);
+      try {
+        //Agregar busqueda a la base de datos
+        const sessionUser = sessionStorage.getItem('teriyakiUser');
+        if (sessionUser) {
+          setCurrentUser(JSON.parses(sessionUser));
+        }
+
+        if (sessionUser || currentUser){
+          //Agregar que busque el primer board
+          setActiveBoardId(initialData.activeBoardId);
+        }
+
+      } catch (error) {
+        console.error("Error al inicializar la app", error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    initializeApp();
+  }, [currentUser]);
+
+  const handleLoginSucces = (user) => {
+    set
+  }
 
   // Lógica de Drag and Drop
   const onDragEnd = (result) => {
@@ -55,7 +98,7 @@ function App() {
 
     setData(prev => ({ ...prev, columns: { ...prev.columns, [newStart.id]: newStart, [newFinish.id]: newFinish } }));
   };
-  
+
   // --- Gestión de Boards ---
   const addBoard = () => {
     const boardName = prompt("Ingresa el nombre del nuevo tablero:");
@@ -65,20 +108,20 @@ function App() {
     setData(prev => ({ ...prev, boards: { ...prev.boards, [newBoardId]: newBoard } }));
     setActiveBoardId(newBoardId);
   };
-  
+
   const renameBoard = (boardId, newName) => {
-    if(!newName) return;
-    setData(prev => ({ ...prev, boards: { ...prev.boards, [boardId]: {...prev.boards[boardId], title: newName} }}));
+    if (!newName) return;
+    setData(prev => ({ ...prev, boards: { ...prev.boards, [boardId]: { ...prev.boards[boardId], title: newName } } }));
   };
 
   const deleteBoard = (boardId) => {
     if (!window.confirm("¿Seguro que quieres eliminar este tablero y todas sus listas?")) return;
     setData(prev => {
-        const newBoards = { ...prev.boards };
-        delete newBoards[boardId];
-        const newActiveBoardId = Object.keys(newBoards)[0] || null;
-        setActiveBoardId(newActiveBoardId);
-        return { ...prev, boards: newBoards };
+      const newBoards = { ...prev.boards };
+      delete newBoards[boardId];
+      const newActiveBoardId = Object.keys(newBoards)[0] || null;
+      setActiveBoardId(newActiveBoardId);
+      return { ...prev, boards: newBoards };
     });
   };
 
@@ -97,56 +140,56 @@ function App() {
   };
 
   const renameList = (columnId, newName) => {
-    if(!newName) return;
-    setData(prev => ({ ...prev, columns: { ...prev.columns, [columnId]: {...prev.columns[columnId], title: newName}}}));
+    if (!newName) return;
+    setData(prev => ({ ...prev, columns: { ...prev.columns, [columnId]: { ...prev.columns[columnId], title: newName } } }));
   };
 
   const deleteList = (columnId) => {
-     if (!window.confirm("¿Seguro que quieres eliminar esta lista?")) return;
-     const newColumnOrder = activeBoard.columnOrder.filter(id => id !== columnId);
-     const newBoard = { ...activeBoard, columnOrder: newColumnOrder };
-     setData(prev => ({ ...prev, boards: {...prev.boards, [newBoard.id]: newBoard} }));
+    if (!window.confirm("¿Seguro que quieres eliminar esta lista?")) return;
+    const newColumnOrder = activeBoard.columnOrder.filter(id => id !== columnId);
+    const newBoard = { ...activeBoard, columnOrder: newColumnOrder };
+    setData(prev => ({ ...prev, boards: { ...prev.boards, [newBoard.id]: newBoard } }));
   };
-  
+
   // --- Gestión de Tarjetas (Tasks) ---
   const handleOpenModal = (taskId, columnId) => {
     const task = taskId ? data.tasks[taskId] : null;
     setModalState({ isOpen: true, task, columnId });
   };
-  
+
   const handleCloseModal = () => {
     setModalState({ isOpen: false, task: null, columnId: null });
   };
-  
+
   const handleSaveTask = (taskData) => {
     // Es una tarea nueva
     if (!taskData.id) {
-        const newTaskId = `task-${Date.now()}`;
-        const newTask = { ...taskData, id: newTaskId };
-        const column = data.columns[modalState.columnId];
-        const newTaskIds = [...column.taskIds, newTaskId];
+      const newTaskId = `task-${Date.now()}`;
+      const newTask = { ...taskData, id: newTaskId };
+      const column = data.columns[modalState.columnId];
+      const newTaskIds = [...column.taskIds, newTaskId];
 
-        setData(prev => ({
-            ...prev,
-            tasks: { ...prev.tasks, [newTaskId]: newTask },
-            columns: { ...prev.columns, [column.id]: { ...column, taskIds: newTaskIds } }
-        }));
+      setData(prev => ({
+        ...prev,
+        tasks: { ...prev.tasks, [newTaskId]: newTask },
+        columns: { ...prev.columns, [column.id]: { ...column, taskIds: newTaskIds } }
+      }));
     } else { // Es una actualización
-        setData(prev => ({
-            ...prev,
-            tasks: { ...prev.tasks, [taskData.id]: taskData }
-        }));
+      setData(prev => ({
+        ...prev,
+        tasks: { ...prev.tasks, [taskData.id]: taskData }
+      }));
     }
     handleCloseModal();
   };
-  
+
   const deleteTask = (taskId, columnId) => {
     if (!window.confirm("¿Seguro que quieres eliminar esta tarjeta?")) return;
     const column = data.columns[columnId];
     const newTaskIds = column.taskIds.filter(id => id !== taskId);
     setData(prev => ({
-        ...prev,
-        columns: {...prev.columns, [columnId]: {...column, taskIds: newTaskIds}}
+      ...prev,
+      columns: { ...prev.columns, [columnId]: { ...column, taskIds: newTaskIds } }
     }));
   };
 
@@ -179,28 +222,28 @@ function App() {
       <div className="content-row">
           <div className="sidebar">
         {/* ... (logo) ... */}
-         {Object.values(data.boards).map(board => (
-            <div key={board.id} className={`board-button-wrapper ${board.id === activeBoardId ? 'active' : ''}`}>
-                 <button className="board-button" onClick={() => setActiveBoardId(board.id)}>
-                    {board.title}
-                </button>
-                <div className="board-actions">
-                    <img src={EditIcon} alt="Editar" onClick={() => renameBoard(board.id, prompt('Nuevo nombre del tablero:', board.title))} />
-                    <img src={TrashIcon} alt="Eliminar" onClick={() => deleteBoard(board.id)} />
-                </div>
+        {Object.values(data.boards).map(board => (
+          <div key={board.id} className={`board-button-wrapper ${board.id === activeBoardId ? 'active' : ''}`}>
+            <button className="board-button" onClick={() => setActiveBoardId(board.id)}>
+              {board.title}
+            </button>
+            <div className="board-actions">
+              <img src={EditIcon} alt="Editar" onClick={() => renameBoard(board.id, prompt('Nuevo nombre del tablero:', board.title))} />
+              <img src={TrashIcon} alt="Eliminar" onClick={() => deleteBoard(board.id)} />
             </div>
-         ))}
+          </div>
+        ))}
         <button className="add-board-button" onClick={addBoard}>+ Añadir Tablero</button>
         {/* ... (logout) ... */}
       </div>
 
       <div className="main-content">
         <header className="main-header">
-           <div className="header-left">
-              <h2>{activeBoard?.title || 'Sin tableros'}</h2>
-              <button className="create-list-button" onClick={addList} disabled={!activeBoard}>+ Crear Lista</button>
-           </div>
-           {/* ... (user-info) ... */}
+          <div className="header-left">
+            <h2>{activeBoard?.title || 'Sin tableros'}</h2>
+            <button className="create-list-button" onClick={addList} disabled={!activeBoard}>+ Crear Lista</button>
+          </div>
+          {/* ... (user-info) ... */}
         </header>
         <DragDropContext onDragEnd={onDragEnd}>
           <Board
