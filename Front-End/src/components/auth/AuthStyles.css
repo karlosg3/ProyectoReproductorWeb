@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+ 
   min-height: 100vh;
   background-color: #1E1E2D; /* Color de fondo de la imagen */
   color: white;
@@ -32,6 +32,7 @@
 .auth-form-container {
   width: 100%;
   max-width: 360px; /* Ancho de los formularios */
+  height: 600px;
 }
 
 .auth-form {

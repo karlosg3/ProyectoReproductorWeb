@@ -1,6 +1,7 @@
 // src/components/auth/AuthLayout.jsx
 import React from 'react';
 import './AuthStyles.css'; // Crearemos este archivo CSS
+import Login from './Login';
 
 const AuthLayout = ({ children }) => {
   return (
@@ -10,7 +11,7 @@ const AuthLayout = ({ children }) => {
         <p>Proyectos</p>
       </div>
       <div className="auth-form-container">
-        {children}
+      <Login/>
       </div>
     </div>
   );

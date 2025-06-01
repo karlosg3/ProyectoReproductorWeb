@@ -1,15 +1,17 @@
 // src/App.jsx
 import React, { useState } from 'react';
-import initialData from './initial-data';
-import Board from './components/Board';
-import TaskModal from './components/TaskModal';
+import initialData from '../initial-data.js';
+import Board from '../components/Board';
+import TaskModal from '../components/TaskModal';
 import { DragDropContext } from '@hello-pangea/dnd';
-import './App.css';
-import EditIcon from './assets/edit.svg';
-import TrashIcon from './assets/trash.svg';
+import '../App.css';
+import EditIcon from '../assets/edit.svg';
+import TrashIcon from '../assets/trash.svg';
+import { Link } from 'react-router-dom';
 
-function boardPage() {
-    const [data, setData] = useState(initialData);
+
+function BoardPage() {
+  const [data, setData] = useState(initialData);
     const [activeBoardId, setActiveBoardId] = useState(data.activeBoardId);
     const [modalState, setModalState] = useState({ isOpen: false, task: null, columnId: null });
 
@@ -161,7 +163,10 @@ function boardPage() {
                     <div className="user-info">
                         <div className="user-avatar"></div>
                         <span className="user-name">Juan Pérez</span>
+                        <Link to =  '/'>
                         <button className="logout-button-header">Cerrar sesión</button>
+                        </Link>
+                        
                     </div>
                 </div>
             </div>
@@ -214,6 +219,7 @@ function boardPage() {
             </div>
         </div>
     );
+   
 }
 
-export default boardPage;
+export default BoardPage;
