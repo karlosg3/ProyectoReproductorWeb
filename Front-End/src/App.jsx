@@ -151,7 +151,23 @@ function App() {
   };
 
   return (
+
     <div className="app-container">
+
+      <div className="header-principal">
+        <div className="header-left">
+    <img src="/logo.png" alt="Logo" className="logo-header" />
+  </div>
+
+  <div className="header-right">
+    <div className="user-info">
+      <div className="user-avatar"></div>
+      <span className="user-name">Juan Pérez</span>
+      <button className="logout-button-header">Cerrar sesión</button>
+    </div>
+  </div>
+      </div>
+    
       {modalState.isOpen && (
         <TaskModal
           task={modalState.task}
@@ -160,7 +176,8 @@ function App() {
           onSave={handleSaveTask}
         />
       )}
-      <div className="sidebar">
+      <div className="content-row">
+          <div className="sidebar">
         {/* ... (logo) ... */}
          {Object.values(data.boards).map(board => (
             <div key={board.id} className={`board-button-wrapper ${board.id === activeBoardId ? 'active' : ''}`}>
@@ -197,6 +214,9 @@ function App() {
           />
         </DragDropContext>
       </div>
+
+      </div>
+    
     </div>
   );
 }
