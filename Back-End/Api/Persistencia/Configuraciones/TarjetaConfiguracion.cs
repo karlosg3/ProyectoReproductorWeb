@@ -13,6 +13,6 @@ public class TarjetaConfiguracion
         constructor
             .HasMany(t => t.UsuarioTarjetas)
             .WithOne(ut => ut.Tarjeta)
-            .HasForeignKey(ut => ut.TarjetaId);
+            .HasForeignKey(ut => ut.IdTarjeta);
     }
 }

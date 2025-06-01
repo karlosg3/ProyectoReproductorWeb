@@ -23,20 +23,20 @@ public class UsuarioTarjetasController: ControllerBase
         
         var nuevaAsignacion = new UsuarioTarjeta()
         {
-            UsuarioId = asignacion.UsuarioId,
-            TarjetaId = asignacion.TarjetaId,
+            IdUsuario = asignacion.UsuarioId,
+            IdTarjeta = asignacion.TarjetaId,
         };
         await _contexto.UsuarioTarjetas.AddAsync(nuevaAsignacion, cancelacionToken);
         await _contexto.SaveChangesAsync(cancelacionToken);
         
-        return nuevaAsignacion.UsuarioId +  " asignado a " + nuevaAsignacion.TarjetaId;
+        return nuevaAsignacion.IdUsuario +  " asignado a " + nuevaAsignacion.IdTarjeta;
     }
     
     [HttpDelete]
     public async Task<IActionResult> EliminarAsignacion([FromQuery] int usuarioId, [FromQuery] int tarjetaId, CancellationToken cancelacionToken)
     {
         var asignacion = await _contexto.UsuarioTarjetas
-            .FirstOrDefaultAsync(ut => ut.UsuarioId == usuarioId && ut.TarjetaId == tarjetaId);
+            .FirstOrDefaultAsync(ut => ut.IdUsuario == usuarioId && ut.IdTarjeta == tarjetaId);
 
         if (asignacion == null)
             return NotFound();

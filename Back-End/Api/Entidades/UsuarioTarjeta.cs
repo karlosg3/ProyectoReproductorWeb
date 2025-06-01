@@ -2,9 +2,9 @@
 
 public class UsuarioTarjeta
 { 
-    public int UsuarioId { get; set; }
+    public int IdUsuario { get; set; }
     public Usuario Usuario { get; set; }
 
-    public int TarjetaId { get; set; }
+    public int IdTarjeta { get; set; }
     public Tarjeta Tarjeta { get; set; }
 }

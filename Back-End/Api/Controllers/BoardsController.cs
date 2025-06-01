@@ -89,4 +89,16 @@ public class BoardsController: ControllerBase
         
         return true;
     }
+
+    [HttpDelete]
+    public async Task<bool> EliminarBoard(string slug, CancellationToken cancelacionToken)
+    {
+        var board = await _contexto.Boards.FirstOrDefaultAsync(x => x.Slug == slug, cancelacionToken);
+        if (board == null)
+            return false;
+        
+        _contexto.Boards.Remove(board);
+        await _contexto.SaveChangesAsync(cancelacionToken);
+        return true;
+    }
 }

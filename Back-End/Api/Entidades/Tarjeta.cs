@@ -17,8 +17,6 @@ public class Tarjeta : ISlug
     
     public int IdLista { get; set; }     // Foreign key
     public Lista Lista { get; set; }     // Navegación
-    
-    public virtual ICollection<Usuario> Usuarios  { get; set; }
     public virtual ICollection<UsuarioTarjeta> UsuarioTarjetas  { get; set; }
     
     public string ObtenerDescripcionParaSlug()

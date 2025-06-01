@@ -10,9 +10,9 @@ public class UsuarioConfiguracion
         constructor.HasKey(u => u.Id);
         
         constructor
-            .HasMany(u => u.UsuarioTarjetas)
-            .WithOne(ut => ut.Usuario)
-            .HasForeignKey(ut => ut.UsuarioId);
+            .HasMany(u => u.Sesiones)
+            .WithOne(s => s.Usuario)
+            .HasForeignKey(ut => ut.IdUsuario);
     }
 
 }
