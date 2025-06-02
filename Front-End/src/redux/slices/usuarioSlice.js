@@ -1,26 +1,22 @@
 // redux/slices/usuarioSlice.js
 import { createSlice } from '@reduxjs/toolkit';
+import { loginUsuario, registerUsuario } from '../actions/usuarioActions';
 
-const initialState = {
-  usuario: null,
-  token: null,
-  loading: false,
-  error: null,
-};
-
-export const usuarioSlice = createSlice({
+const userSlice = createSlice({
   name: 'user',
-  initialState,
+  initialState: null,
   reducers: {
-    logoutUsuario: (state) => {
-      state.usuario = null;
-      state.token = null;
-    },
+    logoutUser: () => {
+      localStorage.removeItem('user');
+      return null;
+    }
   },
   extraReducers: (builder) => {
-    // Aquí se manejan los reducers de los async actions (login, register)
-  },
+    builder
+      .addCase(loginUsuario.fulfilled, (state, action) => action.payload)
+      .addCase(registerUsuario.fulfilled, (state, action) => action.payload);
+  }
 });
 
-export const { logoutUsuario } = usuarioSlice.actions;
-export default usuarioSlice.reducer;
+export const { logoutUser } = userSlice.actions;
+export default userSlice.reducer;

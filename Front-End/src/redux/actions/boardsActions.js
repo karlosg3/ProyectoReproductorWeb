@@ -5,7 +5,7 @@ import {
   createBoardService,
   deleteBoardService,
   updateBoardService,
-} from '../services/boardService';
+} from '../../services/boardService';
 
 export const getBoardByName = createAsyncThunk(
   'board/getByName',

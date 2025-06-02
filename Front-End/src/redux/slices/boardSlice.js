@@ -1,6 +1,6 @@
 // redux/slices/boardSlice.js
 import { createSlice } from '@reduxjs/toolkit';
-import { getBoardByName, createBoard, deleteBoard, updateBoard } from '../actions/boardActions';
+import { getBoardByName, createBoard, deleteBoard, updateBoard } from '../actions/boardsActions';
 
 const initialState = {
   boards: [],

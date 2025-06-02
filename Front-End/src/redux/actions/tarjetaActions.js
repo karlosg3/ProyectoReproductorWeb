@@ -7,7 +7,7 @@ import {
   cambiarPosicionTarjetaService,
   cambiarTarjetaDeListaService,
   eliminarTarjetaService
-} from '../services/tarjetaService';
+} from '../../services/tarjetaService';
 
 export const getTarjetaByNombre = createAsyncThunk(
   'tarjetas/getByNombre',

@@ -5,7 +5,7 @@ import Login from './Login';
 import { useDispatch } from 'react-redux';
 import {
   loginUsuario,
-  registroUsuario
+  registerUsuario
 } from '../../redux/actions/usuarioActions'
 
 const AuthLayout = () => {
@@ -14,8 +14,8 @@ const AuthLayout = () => {
       try {
         let res = await dispatch(loginUsuario({ username: usuario, password: password }));
         if (loginUsuario.rejected.match(res)) {
-          res = await dispatch(registroUsuario({ username: usuario, password: password}));
-          if (registroUsuario.rejected.match(res)) {
+          res = await dispatch(registerUsuario({ username: usuario, password: password}));
+          if (registerUsuario.rejected.match(res)) {
             const msg = res.payload || 'No se pudo registrar el usuario';
             return { ok: false, msg };
           }
