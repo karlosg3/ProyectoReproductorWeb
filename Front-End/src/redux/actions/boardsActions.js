@@ -1,56 +1,52 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import { boardService } from "../../services/boardService";
+// redux/actions/boardActions.js
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import {
+  getBoardByNameService,
+  createBoardService,
+  deleteBoardService,
+  updateBoardService,
+} from '../services/boardService';
 
-export const getBoard = createAsyncThunk(
-    'boards/getBoard',
-    async (IdBoard, { rejectWithValue}) => {
-        try {
-            const res = await boardService.getById(IdBoard);
-            if (res.ok) {
-                return res.data;
-            }
-            return rejectWithValue(res.msg || 'No se encontro el tablero');
-        } catch (e) {
-            return rejectWithValue('Error de red al buscar el tablero');
-        }
+export const getBoardByName = createAsyncThunk(
+  'board/getByName',
+  async (name, { rejectWithValue }) => {
+    try {
+      return await getBoardByNameService(name);
+    } catch (err) {
+      return rejectWithValue(err.response?.data?.message || 'Error al obtener el board');
     }
+  }
 );
 
-export const newBoard = createAsyncThunk(
-    'boards/newBoard',
-    async (board, { rejectWithValue }) => {
-        try{
-            const res = await boardService.newBoard(board);
-            if (res.ok) return res.data;
-            return rejectWithValue(res.msg || 'Error al crear tablero');
-        } catch (e) {
-            return rejectWithValue('Error de red al crear tablero');
-        }
-    }  
+export const createBoard = createAsyncThunk(
+  'board/create',
+  async (data, { rejectWithValue }) => {
+    try {
+      return await createBoardService(data);
+    } catch (err) {
+      return rejectWithValue(err.response?.data?.message || 'Error al crear el board');
+    }
+  }
 );
 
-export const modificarBoard = createAsyncThunk(
-    'boards/modificarBoard',
-    async (board, { rejectWithValue }) => {
-        try {
-            const res = await boardService.modificarBoard(board.id, board);
-            if (res.ok) return res.data;
-            return rejectWithValue(res.msg || 'Error al actualziar tablero');
-        } catch (e) {
-            return rejectWithValue('Error de red al actualizar el tablero');
-        }
+export const deleteBoard = createAsyncThunk(
+  'board/delete',
+  async (id, { rejectWithValue }) => {
+    try {
+      return await deleteBoardService(id);
+    } catch (err) {
+      return rejectWithValue(err.response?.data?.message || 'Error al eliminar el board');
     }
+  }
 );
 
-export const borrarBoard = createAsyncThunk(
-    'boards/borrarBoard',
-    async (IdBoard, { rejectWithValue }) => {
-      try {
-        const res = await boardService.delete(IdBoard);
-        if (res.ok) return IdBoard;
-        return rejectWithValue(res.msg || 'Error al eliminar tablero');
-      } catch (e) {
-        return rejectWithValue('Error de red al eliminar tablero');
-      }
+export const updateBoard = createAsyncThunk(
+  'board/update',
+  async ({ id, name }, { rejectWithValue }) => {
+    try {
+      return await updateBoardService({ id, name });
+    } catch (err) {
+      return rejectWithValue(err.response?.data?.message || 'Error al actualizar el board');
     }
-  );
+  }
+);
