@@ -1,9 +1,10 @@
 using Api.Entidades;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Persistencia.Configuraciones;
 
-public class UsuarioConfiguracion
+public class UsuarioConfiguracion : IEntityTypeConfiguration<Usuario>
 {
     public void Configure(EntityTypeBuilder<Usuario> constructor)
     {

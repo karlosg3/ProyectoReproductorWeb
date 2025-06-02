@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Persistencia.Configuraciones;
 
-public class BoardConfiguracion
+public class BoardConfiguracion :  IEntityTypeConfiguration<Board>
 {
     public void Configure(EntityTypeBuilder<Board> constructor)
     {

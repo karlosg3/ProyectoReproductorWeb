@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Persistencia.Configuraciones;
 
-public class TarjetaConfiguracion
+public class TarjetaConfiguracion : IEntityTypeConfiguration<Tarjeta>
 {
     public void Configure(EntityTypeBuilder<Tarjeta> constructor)
     {

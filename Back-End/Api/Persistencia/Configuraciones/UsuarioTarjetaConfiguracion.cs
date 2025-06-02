@@ -1,9 +1,10 @@
 ﻿using Api.Entidades;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Persistencia.Configuraciones;
 
-public class UsuarioTarjetaConfiguracion
+public class UsuarioTarjetaConfiguracion :  IEntityTypeConfiguration<UsuarioTarjeta>
 {
     public void Configure(EntityTypeBuilder<UsuarioTarjeta> constructor)
     {

@@ -1,9 +1,11 @@
-﻿using Api.Comun.Interfaces;
+﻿using System.ComponentModel.DataAnnotations;
+using Api.Comun.Interfaces;
 
 namespace Api.Entidades;
 
 public class Tarjeta : ISlug
 {
+    [Key]
     public int Id { get; set; }
     public string Nombre { get; set; }
     public string TipoCredito { get; set; }

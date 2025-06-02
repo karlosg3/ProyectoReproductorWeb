@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Api.Persistencia.Configuraciones;
 
-public class ListaConfiguracion
+public class ListaConfiguracion : IEntityTypeConfiguration<Lista>
 {
     public void Configure(EntityTypeBuilder<Lista> constructor)
     {

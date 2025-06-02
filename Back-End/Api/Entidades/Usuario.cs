@@ -1,9 +1,11 @@
+using System.ComponentModel.DataAnnotations;
 using Api.Comun.Interfaces;
 
 namespace Api.Entidades;
 
 public class Usuario : ISlug
 {
+    [Key]
     public int Id { get; set; }
     public string Nombre { get; set; }
     public string CorreoElectronico  { get; set; }
