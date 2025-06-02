@@ -23,7 +23,7 @@ const listaSlice = createSlice({
       state.error = null;
     },
   },
-extraReducers: (builder) => {
+  extraReducers: (builder) => {
     builder
       .addCase(getListasByBoard.pending, (state) => {
         state.loading = true;
@@ -52,7 +52,8 @@ extraReducers: (builder) => {
       .addCase(modificarLista.rejected, (state, action) => {
         state.error = action.payload;
       })
-.addCase(actualizarPosicionLista.fulfilled, (state, action) => {
+
+      .addCase(actualizarPosicionLista.fulfilled, (state, action) => {
         const idx = state.listas.findIndex(l => l.id === action.payload.id);
         if (idx !== -1) state.listas[idx].posicion = action.payload.posicion;
 

@@ -31,34 +31,34 @@ export const crearLista = createAsyncThunk(
 );
 
 export const modificarLista = createAsyncThunk(
-    'listas/modificar',
-    async ({ idLista, nombre }, { rejectWithValue }) => {
-      try {
-        return await modificarListaService({ idLista, nombre });
-      } catch (err) {
-        return rejectWithValue(err.response?.data?.message || 'Error al modificar lista');
-      }
+  'listas/modificar',
+  async ({ idLista, nombre }, { rejectWithValue }) => {
+    try {
+      return await modificarListaService({ idLista, nombre });
+    } catch (err) {
+      return rejectWithValue(err.response?.data?.message || 'Error al modificar lista');
     }
-  );
-  
-  export const actualizarPosicionLista = createAsyncThunk(
-    'listas/actualizarPosicion',
-    async ({ idLista, nuevaPosicion }, { rejectWithValue }) => {
-      try {
-        return await actualizarPosicionListaService({ idLista, nuevaPosicion });
-      } catch (err) {
-        return rejectWithValue(err.response?.data?.message || 'Error al actualizar posición');
-      }
+  }
+);
+
+export const actualizarPosicionLista = createAsyncThunk(
+  'listas/actualizarPosicion',
+  async ({ idLista, nuevaPosicion }, { rejectWithValue }) => {
+    try {
+      return await actualizarPosicionListaService({ idLista, nuevaPosicion });
+    } catch (err) {
+      return rejectWithValue(err.response?.data?.message || 'Error al actualizar posición');
     }
-  );
-  
-  export const eliminarLista = createAsyncThunk(
-    'listas/eliminar',
-    async (idLista, { rejectWithValue }) => {
-      try {
-        return await eliminarListaService(idLista);
-      } catch (err) {
-        return rejectWithValue(err.response?.data?.message || 'Error al eliminar lista');
-      }
+  }
+);
+
+export const eliminarLista = createAsyncThunk(
+  'listas/eliminar',
+  async (idLista, { rejectWithValue }) => {
+    try {
+      return await eliminarListaService(idLista);
+    } catch (err) {
+      return rejectWithValue(err.response?.data?.message || 'Error al eliminar lista');
     }
-  );
+  }
+);
