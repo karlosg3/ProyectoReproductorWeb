@@ -1,65 +1,29 @@
-import api from './api';
+// redux/services/boardService.js
+import axios from 'axios';
 
-export const boardService = {
-    async getAll() {
-        try {
-            const res = await api.get('/api/boards');
-            if (!res || !res.data) {
-                return { ok: false, msg: 'No se pudieron obtener los tableros'};
-            }
+const API = axios.create({
+  baseURL: '/api/boards', // Asegúrate que esto coincida con tu backend
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
 
-            return { ok: true, data: res.data };
-        } catch (error) {
-            return { ok: false, msg: 'Error al obtener los tableros' };
-        }
-    },
-    
-    //Get Board especifico
-    async getById(IdBoard) {
-        try {
-            const res = await api.get(`/api/boards/${IdBoard}`);
-            if (!res || !res.data) {
-                return { ok: false, msg: 'No se encontro el tablero'};
-            }
-            return { ok: true, data: res.data }
-        } catch (error) {
-            return { ok: true, msg: 'Error al buscar el tablero' };
-        }
-    },
-    //Create Board
-    async newBoard(board) {
-        try {
-            const res = await api.post('/api/boards', board);
-            if (!res || !res.data){
-                return { ok: false, msg: 'No se pudo crear el tablero'};
-            }
-            return { ok: true, data: res.data };
-        } catch (error) {
-            return { ok: false, msg: 'Error al crear el tablero' };
-        }
-    },
-    //Update Board
-    async modificarBoard(IdBoard, board) {
-        try {
-            const res = await api.put(`/api/boards/${IdBoard}`, board);
-            if (!res || !res.data) {
-                return { ok: false, msg: 'No se pudo actualizar el tablero' };
-            }
-            return { ok: true, data: res.data };
-        } catch (error) {
-            return { ok: false, msg: 'Error al actualziar el tablero' };
-        }
-    },
-    //Delete Board
-    async borrarBoard(IdBoard) {
-        try {
-            const res = await api.delete(`/api/boards/${IdBoard}`);
-            if (!res) {
-                return { ok: false, msg: 'No se pudo eliminar el tablero'};
-            }
-            return { ok: true };
-        } catch (error) {
-            return { ok: false, msg: 'Error al eliminar el tablero'};
-        }
-    }
-}
+export const getBoardByNameService = async (name) => {
+  const response = await API.get(`/name/${name}`);
+  return response.data;
+};
+
+export const createBoardService = async (data) => {
+  const response = await API.post('/', data); // data: { name: 'Mi Board' }
+  return response.data;
+};
+
+export const deleteBoardService = async (id) => {
+  const response = await API.delete(`/${id}`);
+  return response.data;
+};
+
+export const updateBoardService = async ({ id, name }) => {
+  const response = await API.put(`/${id}`, { name });
+  return response.data;
+};
