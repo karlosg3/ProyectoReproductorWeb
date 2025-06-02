@@ -16,9 +16,9 @@ export const loginUsuario = createAsyncThunk(
 
 export const registroUsuario = createAsyncThunk(
     'usuario/registro',
-    async ({ username, correo, password }, { rejectWithValue}) => {
+    async ({ username, password }, { rejectWithValue}) => {
         try {
-            const res = await registroUsuarioService.register(username, correo, password);
+            const res = await registroUsuarioService.register(username, password);
             if (res.ok) return registroUsuarioService.current();
             return rejectWithValue(res.msg || 'Registro fallido');
         } catch (e) {

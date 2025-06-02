@@ -1,42 +1,35 @@
 // redux/services/tarjetaService.js
-import axios from 'axios';
-
-const API = axios.create({
-  baseURL: '/api/tarjetas',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
+import api from "./api";
 
 export const getTarjetaByNombreService = async (nombre) => {
-  const response = await API.get(`/nombre/${nombre}`);
+  const response = await api.get(`/api/tarjetas/nombre/${nombre}`);
   return response.data;
 };
 
 export const crearTarjetaService = async (data) => {
   // data: { nombre, tipoCredito, tasaInteres, cantidadCredito, descripcion, posicion, idLista }
-  const response = await API.post('/', data);
+  const response = await api.post('/api/tarjetas/', data);
   return response.data;
 };
 
 export const modificarTarjetaService = async (idTarjeta, data) => {
   // data: todos los campos a modificar
-  const response = await API.put(`/${idTarjeta}`, data);
+  const response = await api.put(`/api/tarjetas/${idTarjeta}`, data);
   return response.data;
 };
 
 export const cambiarPosicionTarjetaService = async (idTarjeta, nuevaPosicion) => {
-  const response = await API.patch(`/${idTarjeta}/posicion`, { posicion: nuevaPosicion });
+  const response = await api.patch(`/api/tarjetas/${idTarjeta}/posicion`, { posicion: nuevaPosicion });
   return response.data;
 };
 
 export const cambiarTarjetaDeListaService = async (idTarjeta, idListaDestino) => {
-  const response = await API.patch(`/${idTarjeta}/cambiar-lista`, { idLista: idListaDestino });
+  const response = await api.patch(`/api/tarjetas/${idTarjeta}/cambiar-lista`, { idLista: idListaDestino });
   return response.data;
 };
 
 export const eliminarTarjetaService = async (idTarjeta) => {
-  const response = await API.delete(`/${idTarjeta}`);
+  const response = await api.delete(`/api/tarjetas/${idTarjeta}`);
   return response.data;
 };
 
