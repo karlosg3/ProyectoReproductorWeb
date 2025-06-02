@@ -8,7 +8,7 @@ public class Usuario : ISlug
     [Key]
     public int Id { get; set; }
     public string Nombre { get; set; }
-    public string CorreoElectronico  { get; set; }
+    public string CorreoElectronico { get; set; } = null;
     public string Contraseña { get; set; }
     public bool Habilitado { get; set; }
     public string Slug { get; set; }
