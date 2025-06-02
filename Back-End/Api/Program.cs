@@ -15,11 +15,15 @@ var identidadAjustes = builder.Configuration.GetSection("IdentidadAjustes").Get<
 // Add services to the container.
 builder.Services.AddSingleton(identidadAjustes);
 builder.Services.AddControllers();
+//BD
 builder.Services.AddDbContext<AplicacionBdContexto>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConexion")));
 builder.Services.AddScoped<IAplicacionBdContexto, AplicacionBdContexto>();
+//Servicios
 builder.Services.AddTransient<IHasherServicio, Sha512HasherServicio>();
 builder.Services.AddTransient<ITokenIdentidadServicio, JwtTokenServicio>();
+
+//Auth JWT
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api", Version = "v1" });
@@ -45,6 +49,8 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+
+//Add Cors
 builder.Services.AddCors(conf =>
 {
     conf.AddPolicy("PoliticasCors", options => options.AllowAnyOrigin()

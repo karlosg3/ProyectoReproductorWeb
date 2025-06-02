@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Api.Controllers;
 
 [ApiController]
-[Route("boards")]
+[Route("api/boards")]
 public class BoardsController: ControllerBase
 {
     private readonly IAplicacionBdContexto _contexto;
