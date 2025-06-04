@@ -1,7 +1,7 @@
 // src/components/TaskModal.jsx
 import React, { useState, useEffect } from 'react';
 
-const TaskModal = ({ task, users, onClose, onSave }) => {
+const TaskModal = ({ task, users = [], onClose, onSave }) => {
   const [formData, setFormData] = useState({
     id: null,
     name: '',
@@ -65,9 +65,8 @@ const TaskModal = ({ task, users, onClose, onSave }) => {
               <textarea name="description" value={formData.description} onChange={handleChange}></textarea>
             </div>
             <div className="modal-right">
-              <label>Asignado a</label>
               <div className="user-assignment-list">
-                {users.map(user => (
+                {(users || []).map(user => (
                   <div 
                     key={user.id} 
                     className={`user-assignment-item ${formData.assignedTo.includes(user.id) ? 'assigned' : ''}`}
