@@ -7,7 +7,7 @@ import Register from './components/auth/Registrar.jsx';
 import BoardPage from './pages/BoardPage.jsx';
 import AuthLayout from './components/auth/AuthLayout.jsx';
 import YouTubeEmbed from './components/auth/ForgotPassword.jsx';
-import { loginUsuario, registroUsuario } from './redux/actions/usuarioActions.js'
+import { loginUsuario, registerUsuario } from './redux/actions/usuarioActions.js'
 import { logoutUsuario } from './redux/slices/usuarioSlice.js';
 import './App.css';
 
@@ -21,8 +21,8 @@ function App() {
     try {
       let res = await dispatch(loginUsuario({ username: usuario, password: password }));
       if (loginUsuario.rejected.match(res)) {
-        res = await dispatch(registroUsuario({ username: usuario, password: password}));
-        if (registroUsuario.rejected.match(res)) {
+        res = await dispatch(registerUsuario({ username: usuario, password: password}));
+        if (registerUsuario.rejected.match(res)) {
           const msg = res.payload || 'No se pudo registrar el usuario';
           return { ok: false, msg };
         }

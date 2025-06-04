@@ -6,7 +6,7 @@ import {
   modificarListaService,
   actualizarPosicionListaService,
   eliminarListaService
-} from '../services/listaService';
+} from '../../services/listaService';
 
 export const getListasByBoard = createAsyncThunk(
   'listas/getByBoard',

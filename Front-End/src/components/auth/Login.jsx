@@ -74,7 +74,6 @@ export default function Login({ onAuth }) {
 import React, { useState } from 'react';
 import '../auth/Login.css'
 import { Link, useNavigate } from 'react-router-dom';
-import BoardPage from '../../pages/BoardPage';
 
 const Login = ({ onAuth }) => {
   const [usuario, setUsuario] = useState('');

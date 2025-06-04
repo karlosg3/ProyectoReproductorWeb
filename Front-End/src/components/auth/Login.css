@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* Make sure it takes at least the full viewport height */
-    background-color: #1e272e; /* Dark background */
+    background-color: rgb(2, 7, 10); /* Dark background */
     color: #f8f8f8; /* Light text color */
     padding: 20px;
   }
@@ -14,9 +14,9 @@
     flex-direction: column;
     width: 300px; /* Adjust width as needed */
     padding: 30px;
-    background-color: #2c3a47; /* Darker form background */
+    background-color: #141b29; /* Darker form background */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.3);
   }
   
   h2 {
@@ -37,7 +37,7 @@
     margin-bottom: 15px;
     border: none;
     border-radius: 4px;
-    background-color: #34495e;
+    background-color: #11111a;
     color: #f8f8f8;
     font-size: 1em;
   }
